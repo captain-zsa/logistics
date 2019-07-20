@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ZZ-logistics Заказ продуктов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body-flex">
+    <!-- Это спрайт c svg иконками -->
+    <div class="none"><include src="build/img/sprite.svg"></include></div>
+
+    <div class="error-page">
+        <span class="error-page__num">
+            4
+            <svg><use xlink:href="#error-icon"></use></svg>
+            4
+        </span>
+        <p class="error-page__text text text--uppercase">К сожалению, страница не найдена</p>
+
+        <a href="index.html" class="btn  btn--arrow  btn--border  btn--transparent  error-page__btn">
+            Вернуться на главную страницу
+            <svg class="arrow  arrow--right">
+                <use xlink:href="#arrow"></use>
+            </svg>
+        </a>
+    </div>
+</body>
+</html>
