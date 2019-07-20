@@ -1,0 +1,60 @@
+.body-flex {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none {
+    display: none !important;
+}
+.bg {
+    display: none;
+    background: $o-black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: $desctop-width;
+    margin: 0 auto;
+}
+
+.l-hidden {
+    display: none;
+}
+
+.l-flex {
+    @include flex;
+    justify-content: flex-start;
+
+    &__half {
+        width: 48%;
+    }
+}
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .main {
+        max-width: $tablet-width;
+    }
+
+    .l-hidden_tablet {
+        display: none;
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .main {
+        max-width: $mobile-width;
+    }
+
+    .l-hidden_mobile {
+        display: none;
+    }
+}

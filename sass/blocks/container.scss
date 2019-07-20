@@ -1,0 +1,137 @@
+.container {
+    padding-bottom: 40px;
+    margin-top: 33px;
+    @include flex;
+    align-items: flex-start;
+
+    &__part {
+        max-width: 278px;
+        width: 100%;
+    }
+
+    &__center {
+        max-width: 584px;
+        width: 100%;
+    }
+
+    &__additionally {
+        max-width: 278px;
+        width: 100%;
+    }
+
+    &__order {
+        margin-top: 9px;
+
+        &--success {
+            margin-top: 0;
+            background-color: $u-white;
+            padding: 25px 30px;
+        }
+    }
+
+    &__pagination {
+        margin-top: 10px;
+    }
+
+    &__banner {
+        margin-top: 30px;
+    }
+
+    &__exchange {
+        max-width: 320px;
+    }
+
+    &__table {
+        &--success {
+            max-width: 320px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__operation {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $silver-big;
+    }
+
+    &__payment {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $silver-big;
+    }
+
+    &__payment-method {
+        width: 100%;
+    }
+
+    &__mini-cart {
+        margin-bottom: 30px;
+    }
+
+    &__video {
+        margin-bottom: 30px;
+    }
+
+    &__redemption {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .container {
+        display: block;
+
+        &:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        &__part {
+            float: left;
+        }
+
+        &__additionally {
+            float: left;
+            margin-top: 10px;
+        }
+
+        &__center {
+            float: right;
+            max-width: 480px;
+        }
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        &__part,
+        &__additionally {
+            max-width: 100%;
+        }
+
+        &__center {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__order {
+            &--success {
+                padding: 20px 15px;
+            }
+        }
+
+        &__payment-method {
+            width: 100%;
+        }
+    }
+}

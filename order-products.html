@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ZZ-logistics Заказ продуктов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Это спрайт c svg иконками -->
+    <div class="none"><include src="build/img/sprite.svg"></include></div>
+
+    <header class="main  top">
+        <img src="img/logo.svg" alt="Topzakazz logistics logo" class="top__logo">
+        <a href="#" class="text  text--uppercase  text--regular  text--main  top__exit">Выход</a>
+    </header>
+
+    <section class="main  user-box">
+        <p class="user-box__text">
+            <small class="text  text--little  text--regular">Здравствуйте,</small>
+            <span class="text  text--uppercase  text--bold  user-box__name">Алексей Хайрутдинов</span>
+        </p>
+        <div class="user-box__balance">
+            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--left">
+                Пополнить
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+            <select name="price" class="select-valuted user-box__select">
+                <option value="4187" selected>RUB</option>
+                <option value="418.7">CNY</option>
+                <option value="65">USD</option>
+            </select>
+            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--right">
+                Вывести
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <main class="main container">
+        <ul class="part  container__part">
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link  part__link--active  text--bold">Мои заказы</a>
+            </li>
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link">Раздел 2</a>
+            </li>
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link">Раздел 3</a>
+            </li>
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link">Раздел 4</a>
+            </li>
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link">Раздел 5</a>
+            </li>
+        </ul>
+
+        <div class="container__center">
+            <div class="redemption-order">
+                <div class="redemption-order__top">
+                    <h3 class="text  text--big  text--uppercase">заказ на выкуп №1</h3>
+                    <span class="text  text--big  text--silver">21.04.2019</span>
+                </div>
+
+                <div class="redemption-order container__redemption">
+                    <div class="redemption-order__item">
+                        <svg class="redemption-order__icon-product"><use xlink:href="#product"></use></svg>
+                        <strong>Товар №1</strong>
+                        <button type="button" class="redemption-order__collapsed"><svg class="arrow  arrow--bottom_center"><use xlink:href="#arrow"></use></svg></button>
+                        <button type="button" class="redemption-order__delit cross"><svg><use xlink:href="#cross"></use></svg></button>
+                    </div>
+
+                    <form class="redemption-order__info" method="post" action="">
+                        <label class="label  label--margin-bottom_small">
+                            <span class="text  text--regular">Ссылка на товар</span>
+                            <input type="text" name="link-product" class="input  input--max" placeholder="Введите ссылку на товар">
+                        </label>
+
+                        <label class="label">
+                            <span class="text  text--regular">Загрузите фотографию с модификациями товара</span>
+                        </label>
+                        <div class="l-flex">
+                            <label class="add-img">
+                                <input type="file">
+                                <span class="cross cross--plus"  aria-label="Добавить изображение"><svg><use xlink:href="#cross"></use></svg></span>
+                            </label>
+                        </div>
+
+                        <label class="label  label--margin-top_small  label--margin-bottom_small">
+                            <span class="text  text--regular">Или добавьте скриншот с модификациями товара</span>
+                            <input type="text" name="link-product" class="input  input--max" placeholder="Введите ссылку на товар">
+                        </label>
+
+                        <label class="label  label--margin-bottom_small  label--flex">
+                            <span class="text  text--regular">Укажите суммарную стоимость товарных позиций по данной ссылке</span>
+                            <input type="text" name="link-product" class="input  input--rubber" placeholder="Введите сумму">
+                            <strong class="text  text--regular">¥, юаней</strong>
+                        </label>
+
+                        <label class="label">
+                            <strong class="text  text--regular">Дополнительные параметры:</strong>
+                        </label>
+                        <div class="l-flex">
+                            <div class="l-flex__half">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Требуется визуальная проверка на брак</span>
+                                </label>
+                            </div>
+                            <div class="l-flex__half">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Требуется фото товара по&nbsp;прибытию на склад</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="important  important--text  redemption-order__important">
+                            <p class="text  text--little"><b class="text__bold">Обратите внимание!</b> Стоимость дополнительных услуг оплачивается отдельно за каждую единицу товара согласно следующим тарифам:</p>
+                            <table class="important__table  text  text--little">
+                                <tr>
+                                    <td>Визуальная проверка на брак:</td>
+                                    <td>1 ¥/единица</td>
+                                </tr>
+                                <tr>
+                                    <td>Отдельное фото товара:</td>
+                                    <td>1 ¥/единица</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <label class="label  label--margin-bottom_small">
+                            <span class="text  text--regular">Комментарий:</span>
+                            <textarea name="text" class="textarea  textarea--big" placeholder="Если у Вас есть дополнительные требования, укажите их здесь"></textarea>
+                        </label>
+
+                        <button class="btn btn--arrow  btn--right" type="submit">
+                            Сохранить
+                            <svg class="arrow  arrow--right">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="redemption-order__more  l-flex">
+                    <span class="text  text--bold">Добавить ещё один товар к этому заказу</span>
+                    <a href="#" class="btn  btn--arrow  btn--border  btn--border_silver">
+                        добавить товар
+                        <svg class="arrow  arrow--right">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__additionally">
+
+            <div class="video container__video">
+                <a href="#" class="cross  video__close" aria-label="Закрыть"><svg><use xlink:href="#cross"></use></svg></a>
+                <h5 class="text  text--uppercase  text--bold  text--big  video__title">посмотрите видео<br>как правильно оформить заказ</h5>
+                <div class="video__wrap">
+                    <img src="img/video__preview.png" class="video__preview">
+                </div>
+            </div>
+
+            <div class="mini-cart  container__mini-cart">
+                <h5 class="text  text--uppercase  text--bold  text--big  mini-cart__title">Корзина</h5>
+                <table class="mini-cart__params  text  text--regular">
+                    <tr>
+                        <td>Стоимость товара</td>
+                        <td>1250</td>
+                    </tr>
+                    <tr>
+                        <td>Комиссия платформы</td>
+                        <td>55</td>
+                    </tr>
+                    <tr>
+                        <td>Итоговая стоимость</td>
+                        <td>1755</td>
+                    </tr>
+                </table>
+                <table class="mini-cart__params mini-cart__params--silver  text  text--regular  text--blonde">
+                    <tr>
+                        <td>Доставка товара по Китаю</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Дополнительные услуги</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+                <a href="#" class="btn btn--arrow">
+                    Оформить заказ
+                    <svg class="arrow  arrow--right">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="buyout">
+                <h5 class="text  text--uppercase  text--bold  text--big">Услуга “выкуп товара с&nbsp;китайских сайтов”</h5>
+
+                <ul class="text  text--regular  buyout__list">
+                    <li class="buyout__item">
+                        <span class="buyout__percent">7%</span>
+                        <p class="buyout__price  buyout__price--min">
+                            < 50 000 ₽
+                            <small class="text  text--little">минимум 1 000 ₽</small>
+                        </p>
+                    </li>
+                    <li class="buyout__item">
+                        <span class="buyout__percent">5%</span>
+                        <p class="buyout__price  buyout__price--normal">
+                            50 000 ₽ - 200 000 ₽
+                        </p>
+                    </li>
+                    <li class="buyout__item">
+                        <span class="buyout__percent">4%</span>
+                        <p class="buyout__price  buyout__price--large">
+                            200 000 ₽ - 500 000 ₽
+                        </p>
+                    </li>
+                    <li class="buyout__item">
+                        <span class="buyout__percent">3%</span>
+                        <p class="buyout__price  buyout__price--big">
+                            > 500 000 ₽
+                        </p>
+                    </li>
+                </ul>
+                <div class="important  buyout__important">
+                    <p class="text  text--little">Размер комиссии услуг зависит от&nbsp;суммы Вашего заказа. Чем больше сумма заказа, тем наша комиссия ниже</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>

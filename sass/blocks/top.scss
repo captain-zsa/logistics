@@ -1,0 +1,28 @@
+.top {
+    @include flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &__logo {
+        width: 160px;
+        height: 48px;
+        img {
+            display: block;
+        }
+    }
+
+    &__exit {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .top {
+        box-sizing: border-box;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

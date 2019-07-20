@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ZZ-logistics Заказ создан</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Это спрайт c svg иконками -->
+    <div class="none"><include src="build/img/sprite.svg"></include></div>
+
+    <header class="main  top">
+        <img src="img/logo.svg" alt="Topzakazz logistics logo" class="top__logo">
+        <a href="#" class="text  text--uppercase  text--regular  text--main  top__exit">Выход</a>
+    </header>
+
+    <section class="main  user-box">
+        <p class="user-box__text">
+            <small class="text  text--little  text--regular">Здравствуйте,</small>
+            <span class="text  text--uppercase  text--bold  user-box__name">Алексей Хайрутдинов</span>
+        </p>
+        <div class="user-box__balance">
+            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--left">
+                Пополнить
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+            <select name="price" class="select-valuted user-box__select">
+                <option value="4187" selected>RUB</option>
+                <option value="418.7">CNY</option>
+                <option value="65">USD</option>
+            </select>
+            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--right">
+                Вывести
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <main class="main container">
+        <ul class="part  container__part">
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link  part__link--active  text--bold">Мои заказы</a>
+            </li>
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link">Раздел 2</a>
+            </li>
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link">Раздел 3</a>
+            </li>
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link">Раздел 4</a>
+            </li>
+            <li class="part__item">
+                <a href="#" class="text  text--uppercase  part__link">Раздел 5</a>
+            </li>
+        </ul>
+
+        <div class="container__center">
+            <div class="container__order  container__order--success">
+                <h3 class="text  text--bold  text--uppercase  text--big">Ваш заказ успешно создан</h3>
+
+                <div class="operation  operation--success  container__operation  container__operation--success">
+                    <svg class="operation__icon"><use xlink:href="#operation__icon--success"></use></svg>
+                    <p class="operation__text">
+                        <small class="text text--small text--silver  operation__type">Тип операции</small>
+                        <span class="text  text--uppercase  text--bold  text--big">оплата заказа на выкуп <br>с китайских сайтов</span>
+                    </p>
+                </div>
+
+                <table class="table  table--padding_none  table--align_right  container__table  container__table--success">
+                    <tr class="table__row">
+                        <td class="text  text--bold  table__cell">Номер заказа:</td>
+                        <td class="table__cell">№1584558</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="text  text--bold  table__cell">Дата создания:</td>
+                        <td class="table__cell">21.04.2019</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="text  text--bold  table__cell">Статус заказа:</td>
+                        <td class="table__cell">Не оплачен</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="text  text--bold  table__cell">Сумма заказа:</td>
+                        <td class="table__cell">1 257 ¥, юаней</td>
+                    </tr>
+                </table>
+
+                <div class="text  text--little  important  important--exchange  container__exchange">
+                    <p>Курсы валют <br>на сегодня</p>
+                    <p>1 юань = 10,2 рубля <br>1 юань = 0,1482 доллара</p>
+                </div>
+
+                <table class="payment  container__payment">
+                    <tr class="payment__method">
+                        <td>Метод оплаты</td>
+                        <td>
+                            <select name="payment__method" class="select  container__payment-method">
+                                <option value="1">Баланс личного кабинета (РУБЛИ)</option>
+                                <option value="2">Баланс личного кабинета (ДОЛЛАРЫ)</option>
+                                <option value="3">Баланс личного кабинета (ЮАНИ)</option>
+                            </select>
+                            <small class="text  text--little  text--error">Недостаточно средств. Необходимо пополнить балланс</small>
+                        </td>
+                    </tr>
+                    <tr class="payment__sum">
+                        <td>Спишется</td>
+                        <td>
+                            <span class="text  text--box  text--background_silver_normal payment__price">3207</span>
+                            рубля
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="pay-button">
+                    <p class="text text--little text--silver pay-button__text">Нажимая кнопку, <br>Вы принимаете <a href="#" class="text__link">условия сервиса</a></p>
+                    <a href="#" class="btn btn--arrow">
+                        Заплатить
+                        <svg class="arrow arrow--right">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container__additionally"></div>
+    </main>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>

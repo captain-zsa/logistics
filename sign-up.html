@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ZZ-logistics регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body-flex">
+    <!-- Это спрайт c svg иконками -->
+    <div class="none"><include src="build/img/sprite.svg"></include></div>
+
+    <div class="wrap-form">
+        <img src="img/logo.svg" alt="Topzakazz logistics logo" class="wrap-form__img">
+        <form class="wrap-form__box" method="post" action="">
+            <div class="tab-sign text text--uppercase text--bold">
+                <a href="sign-in.html" class="tab-sign__link  tab-sign__link--login"><svg><use xlink:href="#sign-in"></use></svg>Войти</a>
+                <a href="sign-up.html" class="tab-sign__link  tab-sign__link--active  tab-sign__link--register"><svg><use xlink:href="#sign-up"></use></svg>Создать аккаунт</a>
+            </div>
+            <a href="#" class="btn  btn--vk  wrap-form__vk">
+                <svg>
+                    <use xlink:href="#vk"></use>
+                </svg>
+                Вконтакте
+            </a>
+            <span class="text  text--small  text--silver  wrap-form__or">или</span>
+
+            <label class="wrap-form__label">
+                <span>Адрес электронной почты:</span>
+                <small class="text  text--little  text--error">Такого E-mail не существует</small>
+                <input required type="email" class="input" name="email">
+            </label>
+
+            <div class="wrap-form__flex">
+                <label class="wrap-form__label  wrap-form__label--half">
+                    <span>Фамилия</span>
+                    <input required type="text" class="input" name="lastname">
+                </label>
+
+                <label class="wrap-form__label  wrap-form__label--half">
+                    <span>Имя</span>
+                    <input required type="text" class="input" name="firstname">
+                </label>
+            </div>
+
+            <label class="wrap-form__label">
+                <span>Пароль:</span>
+                <small class="text  text--little  text--silver">Должно быть 8 символов или более</small>
+                <input required type="password" class="input" name="email">
+            </label>
+
+            <p class="text  text--silver  text--little  text--paragraph">Создавая личный кабинет, вы соглашаетесь с нашими Условиями использования & Политикой Конфиденциальности</p>
+
+            <button type="submit" class="btn  btn--arrow  wrap-form__btn">
+                Зарегистрироваться
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>

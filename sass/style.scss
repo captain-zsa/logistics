@@ -1,0 +1,49 @@
+@import "standarts/variables.scss";
+@import "standarts/mixins.scss";
+
+/*Библиотеки*/
+@import "libs/normalize.scss";
+@import "libs/fonts.scss";
+@import "libs/helpers.scss";
+/*@import "libs/slick.scss";*/
+
+/*Основные*/
+@import "standarts/main.scss";
+
+/*БЭМ-блоки*/
+@import "bem/banner.scss";
+@import "bem/arrow.scss";
+@import "bem/btn.scss";
+@import "bem/cross.scss";
+@import "bem/input.scss";
+@import "bem/select.scss";
+@import "bem/textarea.scss";
+@import "bem/checkbox.scss";
+@import "bem/text.scss";
+@import "bem/label.scss";
+@import "bem/add-img.scss";
+
+
+@import "bem/important.scss";
+@import "bem/table.scss";
+@import "bem/part.scss";
+@import "bem/pagination.scss";
+@import "bem/create-order.scss";
+@import "bem/cart-order.scss";
+@import "bem/popup.scss";
+@import "bem/buyout.scss";
+@import "bem/cart.scss";
+@import "bem/video-box.scss";
+@import "bem/operation.scss";
+@import "bem/pay-button.scss";
+@import "bem/payment.scss";
+@import "bem/video.scss";
+@import "bem/mini-cart.scss";
+@import "bem/redemption-order.scss";
+
+/*Блоки в сайте*/
+@import "blocks/wrap-form.scss";
+@import "blocks/tab-sign.scss";
+@import "blocks/top.scss";
+@import "blocks/user-box.scss";
+@import "blocks/container.scss";

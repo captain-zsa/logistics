@@ -1,0 +1,74 @@
+.wrap-form {
+    max-width: 450px;
+    width: 100%;
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 218px;
+    }
+
+    &__box {
+        background-color: $u-white;
+        margin-top: 53px;
+        padding-top: 43px;
+        padding-bottom: 55px;
+        padding-right: 71px;
+        padding-left: 71px;
+    }
+
+    &__vk {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    &__or {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    &__flex {
+        @include flex;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 14px;
+
+        &--half {
+            width: 48%;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 1px;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+    }
+}
+
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .wrap-form {
+        &__img {
+            margin-top: 15px;
+        }
+
+        &__box {
+            margin-top: 20px;
+            padding-right: 7px;
+            padding-left: 7px;
+            padding-bottom: 15px;
+        }
+    }
+}

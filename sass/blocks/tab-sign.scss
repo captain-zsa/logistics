@@ -1,0 +1,42 @@
+.tab-sign {
+    @include flex;
+
+    &__link {
+        width: 50%;
+        border-bottom: 2px solid $silver-large;
+        text-align: center;
+        color: $font-color-silver;
+        padding-bottom: 10px;
+
+        svg {
+            fill: $font-color-silver;
+            display: inline-block;
+            vertical-align: middle;
+            transform: translate(0, -1px);
+            margin-right: 5px;
+        }
+
+        &--active {
+            border-color: $u-orange;
+            color: $font-color-main;
+            svg {
+                fill: $font-color-main;
+            }
+        }
+
+        &--login {
+            svg {
+                width: 12px;
+                height: 18px;
+            }
+        }
+
+        &--register {
+            svg {
+                width: 20px;
+                height: 18px;
+                margin-right: 3px;
+            }
+        }
+    }
+}
