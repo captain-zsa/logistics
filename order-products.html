@@ -95,7 +95,9 @@
                         <svg class="redemption-order__icon-product"><use xlink:href="#product"></use></svg>
                         <strong>Товар №1</strong>
                         <button type="button" class="redemption-order__collapsed"><svg class="arrow  arrow--bottom_center"><use xlink:href="#arrow"></use></svg></button>
-                        <button type="button" class="redemption-order__delit cross"><svg><use xlink:href="#cross"></use></svg></button>
+
+                        <button type="button" class="redemption-order__delit cross" title="Удалить товар"><svg><use xlink:href="#cross"></use></svg></button>
+                        <!-- При клике возникает попап popup--delit -->
                     </div>
 
                     <form class="redemption-order__info" method="post" action="">
@@ -365,6 +367,8 @@
 
             <div class="video container__video">
                 <a href="#" class="cross  video__close" aria-label="Закрыть"><svg><use xlink:href="#cross"></use></svg></a>
+                <!-- Открывает попап popup--video -->
+
                 <h5 class="text  text--uppercase  text--bold  text--big  video__title">посмотрите видео<br>как правильно оформить заказ</h5>
                 <div class="video__wrap">
                     <img src="img/video__preview.png" class="video__preview">
@@ -441,6 +445,20 @@
             </div>
         </div>
     </main>
+
+    <div class="popup  popup--delit">
+        <a class="cross  popup__close"><svg><use xlink:href="#cross"></use></svg></a>
+        <h3 class="text text--uppercase  popup__title">Вы уверенны, что хотите удалить данный товар?</h3>
+        <a href="#" class="btn btn--border  popup__btn">Удалить</a>
+        <a href="#" class="btn btn--border  popup__btn">Отмена</a>
+    </div>
+
+    <div class="popup  popup--video">
+        <a class="cross  popup__close"><svg><use xlink:href="#cross"></use></svg></a>
+        <h3 class="text text--uppercase  popup__title">Вы уверенны, что хотите скрыть обучающее видео?</h3>
+        <a href="#" class="btn btn--border  popup__btn">Скрыть</a>
+        <a href="#" class="btn btn--border  popup__btn">Отмена</a>
+    </div>
 
     <script src="js/jquery-1.11.3.min.js"></script>
     <!-- <script src="js/slick.min.js"></script> -->
