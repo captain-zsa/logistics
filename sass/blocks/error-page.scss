@@ -24,3 +24,25 @@
         margin-right: auto;
     }
 }
+
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .error-page {
+        &__num {
+            font-size: 170px;
+            line-height: 160px;
+
+            svg {
+                width: 100px;
+                margin-left: -20px;
+                margin-right: -20px;
+                transform: translate(0, 20px);
+            }
+        }
+
+        &__btn {
+            max-width: 100%;
+        }
+    }
+}
