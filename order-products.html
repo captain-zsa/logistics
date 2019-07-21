@@ -114,10 +114,15 @@
                             </label>
                         </div>
 
-                        <label class="label  label--margin-top_small  label--margin-bottom_small">
+                        <div class="label  label--margin-top_small  label--margin-bottom_small  label--flex">
                             <span class="text  text--regular">Или добавьте скриншот с модификациями товара</span>
-                            <input type="text" name="link-product" class="input  input--max" placeholder="Введите ссылку на товар">
-                        </label>
+                            <input type="text" name="link-product" class="input  input--rubber" placeholder="Введите ссылку на товар">
+                            <button class="redemption-order__add-line" type="button">
+                                <span class="cross cross--plus  cross--plus_small cross--plus_center">
+                                    <svg><use xlink:href="#cross"></use></svg>
+                                </span>
+                            </button>
+                        </div>
 
                         <label class="label  label--margin-bottom_small  label--flex">
                             <span class="text  text--regular">Укажите суммарную стоимость товарных позиций по данной ссылке</span>
@@ -169,6 +174,132 @@
                             </svg>
                         </button>
                     </form>
+                </div>
+
+                <div class="redemption-order container__redemption">
+                    <div class="redemption-order__item  redemption-order__item--close">
+                        <svg class="redemption-order__icon-product"><use xlink:href="#product"></use></svg>
+                        <strong>Товар №3</strong>
+                        <button type="button" class="redemption-order__collapsed"><svg class="arrow  arrow--right_center"><use xlink:href="#arrow"></use></svg></button>
+                        <button type="button" class="redemption-order__delit cross"><svg><use xlink:href="#cross"></use></svg></button>
+                    </div>
+                </div>
+
+                <div class="redemption-order container__redemption">
+                    <div class="redemption-order__item">
+                        <svg class="redemption-order__icon-product"><use xlink:href="#product"></use></svg>
+                        <strong>Товар №3</strong>
+                        <button type="button" class="redemption-order__collapsed"><svg class="arrow  arrow--bottom_center"><use xlink:href="#arrow"></use></svg></button>
+                        <button type="button" class="redemption-order__delit cross"><svg><use xlink:href="#cross"></use></svg></button>
+                    </div>
+
+                    <form class="redemption-order__info" method="post" action="">
+                        <label class="label  label--margin-bottom_small">
+                            <span class="text  text--regular">Ссылка на товар</span>
+                            <input type="text" name="link-product" class="input  input--max" placeholder="Введите ссылку на товар">
+                        </label>
+
+                        <label class="label">
+                            <span class="text  text--regular">Загрузите фотографию с модификациями товара</span>
+                        </label>
+                        <div class="l-flex">
+                            <label class="add-img">
+                                <input type="file">
+                                <span class="cross cross--plus"  aria-label="Добавить изображение"><svg><use xlink:href="#cross"></use></svg></span>
+                            </label>
+                        </div>
+
+                        <label class="label  label--margin-top_small  label--margin-bottom_small">
+                            <span class="text  text--regular">Или добавьте скриншот с модификациями товара</span>
+                            <input type="text" name="link-product" class="input  input--max" placeholder="Введите ссылку на товар">
+                        </label>
+
+                        <label class="label  label--margin-bottom_small  label--flex">
+                            <span class="text  text--regular">Укажите суммарную стоимость товарных позиций по данной ссылке</span>
+                            <input type="text" name="link-product" class="input  input--rubber" placeholder="Введите сумму">
+                            <strong class="text  text--regular">¥, юаней</strong>
+                        </label>
+
+                        <label class="label">
+                            <strong class="text  text--regular">Дополнительные параметры:</strong>
+                        </label>
+                        <div class="l-flex">
+                            <div class="l-flex__half">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Требуется визуальная проверка на брак</span>
+                                </label>
+                            </div>
+                            <div class="l-flex__half">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Требуется фото товара по&nbsp;прибытию на склад</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="important  important--text  redemption-order__important">
+                            <p class="text  text--little"><b class="text__bold">Обратите внимание!</b> Стоимость дополнительных услуг оплачивается отдельно за каждую единицу товара согласно следующим тарифам:</p>
+                            <table class="important__table  text  text--little">
+                                <tr>
+                                    <td>Визуальная проверка на брак:</td>
+                                    <td>1 ¥/единица</td>
+                                </tr>
+                                <tr>
+                                    <td>Отдельное фото товара:</td>
+                                    <td>1 ¥/единица</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <label class="label  label--margin-bottom_small">
+                            <span class="text  text--regular">Комментарий:</span>
+                            <textarea name="text" class="textarea  textarea--big" placeholder="Если у Вас есть дополнительные требования, укажите их здесь"></textarea>
+                        </label>
+
+                        <button class="btn  btn--check  btn--check_disabled  btn--border  btn--border_silver  btn--right" type="submit">
+                            <svg class="check">
+                                <use xlink:href="#check"></use>
+                            </svg>
+                            Товар добавлен
+                        </button>
+                    </form>
+                </div>
+
+                <div class="redemption-order container__redemption">
+                    <div class="redemption-order__item  redemption-order__item--close">
+                        <svg class="redemption-order__icon-product"><use xlink:href="#product"></use></svg>
+                        <strong>Товар №4</strong>
+                        <button type="button" class="redemption-order__collapsed"><svg class="arrow  arrow--right_center"><use xlink:href="#arrow"></use></svg></button>
+                        <button type="button" class="redemption-order__delit cross"><svg><use xlink:href="#cross"></use></svg></button>
+                    </div>
+                </div>
+
+                <div class="redemption-order container__redemption">
+                    <div class="redemption-order__item  redemption-order__item--close">
+                        <svg class="redemption-order__icon-product"><use xlink:href="#product"></use></svg>
+                        <strong>Товар №5</strong>
+                        <button type="button" class="redemption-order__collapsed"><svg class="arrow  arrow--right_center"><use xlink:href="#arrow"></use></svg></button>
+                        <button type="button" class="redemption-order__delit cross"><svg><use xlink:href="#cross"></use></svg></button>
+                    </div>
+                </div>
+
+                <div class="redemption-order container__redemption">
+                    <div class="redemption-order__item  redemption-order__item--close">
+                        <svg class="redemption-order__icon-product"><use xlink:href="#product"></use></svg>
+                        <strong>Товар №6</strong>
+                        <button type="button" class="redemption-order__collapsed"><svg class="arrow  arrow--right_center"><use xlink:href="#arrow"></use></svg></button>
+                        <button type="button" class="redemption-order__delit cross"><svg><use xlink:href="#cross"></use></svg></button>
+                    </div>
+                </div>
+
+                <div class="redemption-order container__redemption">
+                    <div class="redemption-order__item  redemption-order__item--close">
+                        <svg class="redemption-order__icon-product"><use xlink:href="#product"></use></svg>
+                        <strong>Товар №7</strong>
+                        <button type="button" class="redemption-order__collapsed"><svg class="arrow  arrow--right_center"><use xlink:href="#arrow"></use></svg></button>
+                        <button type="button" class="redemption-order__delit cross"><svg><use xlink:href="#cross"></use></svg></button>
+                    </div>
                 </div>
 
                 <div class="redemption-order__more  l-flex">
