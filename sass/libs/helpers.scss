@@ -37,6 +37,10 @@
     &__half {
         width: 48%;
     }
+
+    &--top {
+        align-items: flex-start;
+    }
 }
 
 /*Планшет*/
@@ -58,5 +62,17 @@
 
     .l-hidden_mobile {
         display: none;
+    }
+
+    .l-flex {
+        &--wrap_mobile {
+            flex-wrap: wrap;
+        }
+
+        &__half {
+            &--max_mobile {
+                width: 100%;
+            }
+        }
     }
 }
