@@ -1,0 +1,48 @@
+.buyout {
+    background-color: $u-white;
+    padding: 20px;
+
+    &__list {
+        @include clear-ul;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        @include flex;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__percent {
+        margin-right: 12px;
+    }
+
+    &__price {
+        margin: 0;
+        padding: 5px 10px;
+
+        &--min {
+            background-color: $silver-min;
+            width: 100%;
+            @include flex;
+        }
+
+        &--normal {
+            background-color: $silver-normal;
+            width: 70%;
+        }
+
+        &--large {
+            background-color: $silver-large;
+        }
+
+        &--big {
+            background-color: $silver-big;
+        }
+    }
+}

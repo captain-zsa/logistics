@@ -1,0 +1,49 @@
+.create-order {
+    @include flex;
+    background-color: $u-pink;
+    padding: 30px;
+    padding-bottom: 29px;
+
+    &__btn {
+        padding-left: 21px;
+        padding-right: 21px;
+        transform: translate(0, -2px);
+    }
+
+    &__box {
+        width: 55px;
+        height: 57px;
+        fill: $font-color-main;
+    }
+
+    &__arrow {
+        width: 60px;
+        height: 51px;
+    }
+
+    &__text {
+        &--left {
+            margin-left: 15px;
+            margin-right: auto;
+        }
+    }
+}
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .create-order {
+        padding: 20px;
+    }
+}
+
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .create-order {
+        &__btn {
+            margin-left: auto;
+            margin-right: auto;
+            transform: none;
+        }
+    }
+}

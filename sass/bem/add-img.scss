@@ -1,0 +1,33 @@
+.add-img {
+    background-color: $silver-normal;
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+
+    input {
+        display: none;
+    }
+
+    span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        span {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .add-img {
+        margin-left: 10px;
+    }
+}

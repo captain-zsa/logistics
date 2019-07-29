@@ -1,0 +1,27 @@
+.video {
+    position: relative;
+
+    &__close {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__title {
+        font-size: $font-size-main;
+    }
+
+    &__wrap {
+        position: relative;
+        width: 100%;
+        height: 178px;
+        border: 1px solid $silver-big;
+        margin-top: 20px;
+    }
+
+    &__preview {
+        display: block;
+        width: 109px;
+        @include center;
+    }
+}

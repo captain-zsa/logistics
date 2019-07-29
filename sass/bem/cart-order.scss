@@ -1,0 +1,41 @@
+.cart-order {
+    @include flex(wrap);
+    background-color: $u-white;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__wrap {
+        @include flex;
+        width: 100%;
+        padding-bottom: 12px;
+        border-bottom: 1px solid $silver-normal;
+        margin-left: 12px;
+    }
+
+    &__table {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .cart-order {
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &__table {
+            margin-bottom: 10px;
+        }
+    }
+}

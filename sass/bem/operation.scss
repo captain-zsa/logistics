@@ -1,0 +1,27 @@
+.operation {
+    @include flex;
+    justify-content: flex-start;
+
+    &__icon {
+        width: 60px;
+        height: 56px;
+        margin-right: 30px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__type {
+        display: block;
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .operation {
+        &__icon {
+            margin-right: 10px;
+        }
+    }
+}

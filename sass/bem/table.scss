@@ -1,0 +1,43 @@
+.table {
+    $bl: ".table";
+    width: 100%;
+    border-collapse: collapse;
+    &__cell {
+        padding: 12px 0;
+        &:first-child {
+            padding-left: 12px;
+        }
+    }
+
+    &__row {
+        &--yellow {
+            background-color: $u-yellow;
+        }
+    }
+
+    &--padding {
+        &_none {
+            #{$bl}__cell {
+                padding-left: 0;
+            }
+        }
+    }
+
+    &--align {
+        &_right {
+            #{$bl}__cell:last-child {
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .table {
+        &__cell {
+            width: 50%;
+        }
+    }
+}

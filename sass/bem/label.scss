@@ -1,0 +1,28 @@
+.label {
+    display: block;
+
+    span {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    &--margin-bottom {
+        &_small {
+            margin-bottom: 25px;
+        }
+    }
+
+    &--margin-top {
+        &_small {
+            margin-top: 25px;
+        }
+    }
+
+    &--flex {
+        @include flex(wrap);
+    }
+
+    &__input {
+        margin-bottom: 10px;
+    }
+}

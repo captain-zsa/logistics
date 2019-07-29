@@ -1,0 +1,40 @@
+.part {
+    $bl: '.part';
+    @include clear-ul;
+
+    &__item {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--partner {
+            margin-top: 30px;
+
+            #{$bl}__link {
+                background-color: $u-pink;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        background-color: $u-white;
+        color: $font-color-main;
+        border-left: 3px solid transparent;
+        padding-left: 17px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        transition: border-color 0.3s;
+
+        &:hover:not(&--active) {
+            border-color: $font-color-blonde;
+        }
+
+        &--active {
+            border-color: $u-orange;
+            font-weight: 700;
+        }
+    }
+}

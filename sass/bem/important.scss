@@ -1,0 +1,22 @@
+.important {
+    background-color: $u-yellow;
+    padding: 17px;
+
+    &__table {
+        margin-top: 15px;
+        border-collapse: collapse;
+        td:first-child {
+            padding-right: 20px;
+        }
+    }
+
+    &--exchange {
+        box-sizing: border-box;
+        padding: 15px 25px;
+        @include flex;
+
+        p {
+            margin: 0;
+        }
+    }
+}

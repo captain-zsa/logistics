@@ -1,0 +1,41 @@
+.payment {
+    &__method {
+        td:first-child {
+            padding-top: 15px;
+            vertical-align: top;
+        }
+    }
+
+    &__price {
+        margin-left: 0;
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .payment {
+        display: block;
+        &__method {
+            @include flex(wrap);
+            margin-bottom: 10px;
+        }
+
+        td {
+            display: block;
+            vertical-align: baseline;
+            padding-top: 0;
+            width: 100%;
+        }
+
+        &__sum {
+            @include flex;
+            justify-content: flex-start;
+
+            td {
+                display: block;
+                width: auto;
+                margin-right: 10px;
+            }
+        }
+    }
+}
