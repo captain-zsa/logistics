@@ -28,11 +28,23 @@
                     <use xlink:href="#arrow"></use>
                 </svg>
             </a>
-            <select name="price" class="select-valuted user-box__select">
-                <option value="4187" selected>RUB</option>
-                <option value="418.7">CNY</option>
-                <option value="65">USD</option>
-            </select>
+            <div class="select select-valuted user-box__select">
+                <div class="select__param">
+                    <span>~</span> <strong>4187</strong> RUB
+                </div>
+                <!-- Если нужно показать селект - показываем select__list display: block; ну или как-то чтоб поменять это свойство-->
+                <div class="select__list">
+                    <div class="select__item" data-value="4187 RUB">
+                        <span>~</span> <strong>4187</strong> RUB
+                    </div>
+                    <div class="select__item" data-value="418.7 CNY">
+                        <span>~</span> <strong>418.7</strong> CNY
+                    </div>
+                    <div class="select__item" data-value="65 USD">
+                        <span>~</span> <strong>65</strong> USD
+                    </div>
+                </div>
+            </div>
             <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--right">
                 Вывести
                 <svg class="arrow  arrow--right">
@@ -296,9 +308,5 @@
             <a href="#" class="banner  container__banner"><img src="img/banner-ref.jpg" alt="Реферальная программа"></a>
         </div>
     </main>
-
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <!-- <script src="js/slick.min.js"></script> -->
-    <script src="js/main.js"></script>
 </body>
 </html>
