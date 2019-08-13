@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ZZ-logistics Пополнить балланс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Это спрайт c svg иконками -->
+    <div class="none"><include src="build/img/sprite.svg"></include></div>
+
+    <header class="main  top">
+        <img src="img/logo.svg" alt="Topzakazz logistics logo" class="top__logo">
+        <a href="#" class="text  text--uppercase  text--regular  text--main  top__exit">Выход</a>
+    </header>
+
+    <section class="main  user-box">
+        <p class="user-box__text">
+            <small class="text  text--little  text--regular">Здравствуйте,</small>
+            <span class="text  text--uppercase  text--bold  user-box__name">Алексей Хайрутдинов</span>
+        </p>
+        <div class="user-box__balance">
+            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--left">
+                Пополнить
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+            <select name="price" class="select-valuted user-box__select">
+                <option value="4187" selected>RUB</option>
+                <option value="418.7">CNY</option>
+                <option value="65">USD</option>
+            </select>
+            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--right">
+                Вывести
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <main class="main container">
+        <div class="container__part">
+            <ul class="part">
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link  part__link--active  text--bold">мои заказы на выкуп</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои отправки из китая</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои запросы на поиск</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои финансы</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои сообщения</a>
+                </li>
+            </ul>
+
+            <ul class="part  container__user-sidebar">
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">моя информация</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">изменить пароль</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои адреса</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои социальные сети</a>
+                </li>
+                <li class="part__item  part__item--partner">
+                    <a href="#" class="text  text--uppercase  part__link">моя реферальная программа</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container__center">
+            <div class="replenish container__replenish">
+                <div class="operation  operation--success  container__operation  container__operation--replenish">
+                    <img src="img/operation__icon--replenish.svg" class="operation__icon">
+                    <p class="operation__text">
+                        <small class="text text--small text--silver  operation__type">Тип операции</small>
+                        <span class="text  text--uppercase  text--bold  text--big">Пополнение баланса <br>личного кабинета</span>
+                    </p>
+                </div>
+                <!-- Я думаю, по отдельности верстать каждую страницу нет смысла с разными вариантами оплаты, вроде там только тексты и картинки меняются, это элементарно просто в разметке изменить (не забудь про br, местами он нужен) -->
+                <form action="#" method="post">
+                    <div class="l-flex replenish__label-wrap">
+                        <label class="label">Метод оплаты</label>
+                        <div class="select select--small replenish__select">
+                            <div class="select__param">Перевод на карту Сбербанка</div>
+                        </div>
+                    </div>
+                    <div class="l-flex replenish__label-wrap">
+                        <label class="label">Счет зачисления</label>
+                        <div class="select select--small replenish__select">
+                            <div class="select__param">Баланс личного кабинета (ЮАНИ)</div>
+                        </div>
+                    </div>
+                    <div class="l-flex replenish__label-wrap">
+                        <label class="label">Укажите сумму к пополнению <br>личного кабинета</label>
+                        <input type="text" class="input replenish__input" placeholder="1 000">
+                        <span>¥, юани</span>
+                    </div>
+                    <div class="text  text--little  important  important--exchange  replenish__important">
+                        <p>Курсы валют на сегодня</p>
+                        <p>1 юань = 10,2 рубля 1 юань = 0,1482 доллара</p>
+                    </div>
+                    <p class="text replenish__helper-text">Вам нужно осуществить перевод средств по следующим реквизитам:</p>
+                    <div class="text  text--little  important  important--alert"><b>Внимание!</b> Оплату по данным реквизитам необходимо произвести <b>не позднее 23:59 часов 18.07.2019</b>. В дальнейшем реквизиты карты могут быть изменены на другие.</div>
+                    <div class="pay-card  replenish__pay-card">
+                        <div class="pay-card__wrap">
+                            <p class="text pay-card__text">Карта получателя:</p>
+                            <p class="text text--bold">4100 0000 0000 1212</p>
+                        </div>
+                        <div class="pay-card__wrap  pay-card__wrap--margin_max">
+                            <p class="text pay-card__text">ФИО получателя:</p>
+                            <p class="text text--bold">JON YAN</p>
+                        </div>
+                        <div class="pay-card__wrap">
+                            <p class="text pay-card__text">Комиссия сервиса:</p>
+                            <input type="text" class="input input--transparent pay-card__commission" value="0%" readonly>
+                            <p class="text text--little">Мы не берем комиссию,<br>но ее может взять ваш банк</p>
+                        </div>
+                        <div class="pay-card__wrap  pay-card__wrap--transfer">
+                            <p class="text text--bold pay-card__text">Нужно перевести:</p>
+                            <div class="pay-card__transfer">
+                                <input type="text" class="input input--transparent input--bold pay-card__sum" placeholder="100 000">
+                                <span class="text">₽, рублей с учетом <br>комиссии 1%</span>
+                                <p class="text text--little  text--silver">Ваш банк может взять дополнительную <br>комиссию</p>
+                            </div>
+                        </div>
+                        <!-- Есть все картинки, ставим их и класс тоже (все одинаково)
+                        [
+                            sber
+                            western
+                            alipay
+                            wechatpay
+                            alfabank
+                            tinkoff
+                            qiwi
+                            yad
+                        ] -->
+                        <div class="pay-card__logo pay-card__logo--sber">
+                            <img src="img/sber.png">
+                        </div>
+                    </div>
+                    <div class="text  text--little  important"><b>Важно!</b> В примечании к платежу ничего не указывайте. Иначе Ваш платеж может быть заморожен на срок до 5 суток до выяснения причин перевода. Все зачисления обрабатываются в ручном режиме и могут достигать 24 часов. После осуществления платежа мы попросим предъявить Вас фотографию чека или скриншот об успешном переводе. <br>Обязательно сохраняйте чек до поступления денежных средств на Ваш счет.</div>
+                    <div class="replenish__wrap-button">
+                        <p class="text">После осуществления платежа нажмите кнопку</p>
+                        <a href="#" class="btn  btn--arrow">
+                            Я оплатил
+                            <svg class="arrow  arrow--right">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Я не знаю, попап эта фигня или нет, если попап и доолжна быть по центру - пиши, переделаю -->
+            <div class="payment-information  container__payment-information">
+                <h3 class="text  text--big  text--uppercase  payment-information__title">Предоставьте информацию о платеже</h3>
+                <div class="payment-information__wrap">
+                    <form class="payment-information__photo" action="#" method="post">
+                        <p class="text">Прикрепите фотографию чека или квитанции о переводе денежных средств</p>
+                        <label class="input-file payment-information__file">
+                            <input type="file" name="photo_check">
+                            <button type="button" class="btn  btn--arrow">
+                                Загрузить
+                                <svg class="arrow  arrow--right">
+                                    <use xlink:href="#arrow"></use>
+                                </svg>
+                            </button>
+                        </label>
+                        <div class="payment-information__download l-hidden">
+                            <img src="img/payment-information__download.svg" alt="">
+                            <span class="text">скриншот.png</span>
+                        </div>
+                        <!-- Все просто - когда change наш input[name=photo_check] - просто убираем l-hidden с кнопки ниже и с payment-information__download и добавляем l-hidden на payment-information__file -->
+                        <button type="submit" class="btn  btn--arrow l-hidden">
+                            Отправить
+                            <svg class="arrow  arrow--right">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="payment-information__separator">
+                        <span>или</span>
+                    </div>
+                    <form class="payment-information__screenshot" action="#" method="post">
+                        <p class="text">Предоставьте скриншот из личного кабинета банкинга об успешной оплате</p>
+                        <input type="text" class="input  payment-information__input" placeholder="http://screenshot.net/screenshot.png" required>
+                        <button type="submit" class="btn  btn--arrow">
+                            Отправить
+                            <svg class="arrow  arrow--right">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container__additionally"></div>
+    </main>
+
+    <div class="popup  popup--wechatpay">
+        <a class="cross  popup__close"><svg><use xlink:href="#cross"></use></svg></a>
+        <img src="img/wechatpayalexey.png">
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

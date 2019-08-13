@@ -4,7 +4,6 @@
 /*Библиотеки*/
 @import "libs/normalize.scss";
 @import "libs/fonts.scss";
-@import "libs/helpers.scss";
 /*@import "libs/slick.scss";*/
 
 /*Основные*/
@@ -22,6 +21,7 @@
 @import "bem/checkbox.scss";
 @import "bem/text.scss";
 @import "bem/label.scss";
+@import "bem/input-file.scss";
 @import "bem/add-img.scss";
 
 
@@ -31,7 +31,6 @@
 @import "bem/pagination.scss";
 @import "bem/create-order.scss";
 @import "bem/cart-order.scss";
-@import "bem/popup.scss";
 @import "bem/buyout.scss";
 @import "bem/cart.scss";
 @import "bem/video-box.scss";
@@ -39,6 +38,7 @@
 @import "bem/pay-button.scss";
 @import "bem/payment.scss";
 @import "bem/video.scss";
+@import "bem/pay-card.scss";
 @import "bem/mini-cart.scss";
 @import "bem/redemption-order.scss";
 
@@ -50,3 +50,8 @@
 @import "blocks/container.scss";
 @import "blocks/popup.scss";
 @import "blocks/error-page.scss";
+@import "blocks/replenish.scss";
+@import "blocks/payment-information.scss";
+
+/*Помощники*/
+@import "libs/helpers.scss";

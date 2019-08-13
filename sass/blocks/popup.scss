@@ -27,4 +27,13 @@
         right: 8px;
         top: 8px;
     }
+
+    &--wechatpay {
+        padding: 30px;
+        padding-bottom: 6px;
+
+        img {
+            max-width: 100%;
+        }
+    }
 }

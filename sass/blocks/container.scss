@@ -64,6 +64,11 @@
         margin-bottom: 10px;
         padding-bottom: 20px;
         border-bottom: 1px solid $silver-big;
+
+        &--replenish {
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
     }
 
     &__payment {
@@ -92,6 +97,15 @@
 
     &__create {
         margin-bottom: 30px;
+    }
+
+    &__replenish {
+        background-color: #fff;
+        padding: 25px 30px;
+    }
+
+    &__payment-information {
+        margin-top: 10px;
     }
 }
 

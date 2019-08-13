@@ -1,0 +1,100 @@
+.pay-card {
+    $bl: '.pay-card';
+
+    background-color: $silver-normal;
+    border: 1px solid $silver-big;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    position: relative;
+    padding-right: 95px;
+
+    &__wrap {
+        @include flex;
+        justify-content: flex-start;
+        margin: 10px 0;
+
+        &--margin {
+            &_max {
+                margin-top: 25px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &--transfer {
+            align-items: flex-start;
+
+            #{$bl}__text {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 135px;
+        width: 100%;
+    }
+
+    &__commission {
+        width: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    &__sum {
+        width: 105px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    &__logo {
+        position: absolute;
+        width: 92px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: $silver-big;
+
+        &--sber {
+            background-color: $color-sber;
+        }
+
+        &--western {
+            background-color: $color-western;
+        }
+
+        &--alipay {
+            background-color: $color-alipay;
+        }
+
+        &--wechatpay {
+            background-color: $color-wechatpay;
+        }
+
+        &--alfabank {
+            background-color: $color-alfabank;
+        }
+
+        &--tinkoff {
+            background-color: $color-tinkoff;
+        }
+
+        &--qiwi {
+            background-color: $color-qiwi;
+        }
+
+        &--yad {
+            background-color: $color-yad;
+        }
+
+        img {
+            @include center;
+        }
+    }
+
+    &__transfer {
+        @include flex(wrap, flex-start);
+    }
+}
