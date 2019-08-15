@@ -23,6 +23,10 @@
         vertical-align: middle;
     }
 
+    &--pink {
+        background-color: $u-pink;
+    }
+
     &--arrow {
         svg {
             transform: translate(0, -1px);
