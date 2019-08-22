@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>ZZ-logistics Изменить пароль</title>
+    <title>ZZ-logistics Моя информация</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
@@ -84,28 +84,94 @@
         <div class="container__center">
             <div class="intro  container__intro">
                 <h3 class="text  text--uppercase  text--bold  text--big  intro__title">
-                    <img src="img/change-password.svg">
-                    Изменить пароль
+                    <img src="img/my-information.svg">
+                    Моя информация
                 </h3>
-                <p class="text">Вы в любой момент можете изменить ваш пароль, чтобы обеспечить безопасность вашей учетной записи</p>
+                <p class="text">Вы в любой момент можете обновить вашу учетную запись и внести любые изменения в приведенные ниже данные</p>
             </div>
-            <form class="change-password container__change-password" method="post">
-                <label class="label  change-password__label">
-                    <span class="text">Текущий пароль</span>
-                    <input type="password" name="now-password" class="input  input--max">
+            <form class="my-information container__my-information" method="post">
+                <label class="label  my-information__label">
+                    <span class="text">Имя</span>
+                    <input type="text" name="first_name" class="input  input--max">
                 </label>
-                <label class="label  change-password__label  change-password__label--margin_none">
-                    <p class="text">Новый пароль</p>
-                    <small class="text text--little text--silver">Должно быть 8 символов или более</small>
-                    <input type="password" name="new-password" class="input  input--max">
+                <label class="label  my-information__label">
+                    <span class="text">Фамилия</span>
+                    <input type="text" name="last_name" class="input  input--max">
                 </label>
-                <label class="checkbox  change-password__checkbox">
-                    <input type="checkbox" name="show-pass" value="1">
-                    <span>Показать пароль</span>
+                <label class="label  my-information__label">
+                    <span class="text">Адрес электронной почты</span>
+                    <input type="email" name="email" class="input  input--max">
                 </label>
+
+                <div class="label  my-information__label  my-information__label--select">
+                    <span class="text  l-max_width">Дата рождения</span>
+
+                    <div class="select  select--inline  select--small">
+                        <div class="select__param">
+                            13
+                        </div>
+                        <!-- Если нужно показать селект - показываем select__list display: block; ну или как-то чтоб поменять это свойство-->
+                        <div class="select__list">
+                            <div class="select__item" data-value="14">
+                                14
+                            </div>
+                            <div class="select__item" data-value="15">
+                                15
+                            </div>
+                            <div class="select__item" data-value="16">
+                                16
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select  select--inline  select--small">
+                        <div class="select__param">
+                            сентября
+                        </div>
+                        <div class="select__list">
+                            <div class="select__item" data-value="октября">
+                                октября
+                            </div>
+                            <div class="select__item" data-value="ноября">
+                                ноября
+                            </div>
+                            <div class="select__item" data-value="декабря">
+                                декабря
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select  select--inline  select--small">
+                        <div class="select__param">
+                            1991
+                        </div>
+                        <div class="select__list">
+                            <div class="select__item" data-value="1992">
+                                1992
+                            </div>
+                            <div class="select__item" data-value="1993">
+                                1993
+                            </div>
+                            <div class="select__item" data-value="1994">
+                                1994
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="label">
+                    <p class="text label__text  label__text--margin_minus">Пол</p>
+                    <label class="checkbox  my-information__checkbox  my-information__checkbox--margin_right">
+                        <input type="radio" name="gender" value="1" checked>
+                        <span>Девушка</span>
+                    </label>
+
+                    <label class="checkbox  my-information__checkbox">
+                        <input type="radio" name="gender" value="2">
+                        <span>Парень</span>
+                    </label>
+                </div>
                 <!-- чтоб сделать не disabled кнопку - нужно убрать btn--arrow_disabled и атрибут disabled и кнопка станет желтой со стрелкой -->
-                <button class="btn  btn--arrow  btn--arrow_disabled   change-password__btn" type="submit" disabled>
-                    Сохранить пароль
+                <button class="btn  btn--arrow  btn--arrow_disabled  my-information__btn" type="submit" disabled>
+                    Сохранить изменения
                     <svg class="arrow  arrow--right">
                         <use xlink:href="#arrow"></use>
                     </svg>

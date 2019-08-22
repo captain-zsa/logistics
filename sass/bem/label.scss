@@ -25,4 +25,12 @@
     &__input {
         margin-bottom: 10px;
     }
+
+    &__text {
+        &--margin {
+            &_minus {
+                margin-bottom: -10px;
+            }
+        }
+    }
 }

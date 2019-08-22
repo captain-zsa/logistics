@@ -74,6 +74,12 @@
             background-color: $silver-min;
         }
     }
+
+    &--inline {
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 35px;
+    }
 }
 
 /*Мобильные*/

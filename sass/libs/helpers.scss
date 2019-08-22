@@ -38,6 +38,10 @@
     }
 }
 
+.l-max_width {
+    width: 100%;
+}
+
 /*Планшет*/
 @media (max-width: $desctop-width - 1) {
     .main {
