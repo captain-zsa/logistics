@@ -31,6 +31,16 @@
         svg {
             transform: translate(0, -1px);
         }
+
+        &_disabled {
+            background-color: $silver-normal;
+            color: $font-color-silver;
+            cursor: not-allowed;
+
+            svg {
+                fill: $font-color-silver;
+            }
+        }
     }
 
     &--vk {
