@@ -7,6 +7,8 @@
 
     &__label-wrap {
         margin-bottom: 20px;
+        @include flex;
+        justify-content: flex-start;
     }
 
     &__input {
@@ -57,6 +59,46 @@
         &__wrap-button {
             .text {
                 max-width: 250px;
+            }
+        }
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .replenish {
+        &__label-wrap {
+            flex-wrap: wrap;
+
+            .label {
+                flex-grow: 1;
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+
+        &__select {
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &__input {
+            flex-grow: 1;
+        }
+
+        &__important {
+            padding-right: 25px;
+        }
+
+        &__wrap-button {
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+
+            .text {
+                margin-bottom: 10px;
             }
         }
     }

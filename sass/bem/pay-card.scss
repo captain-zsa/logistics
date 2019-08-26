@@ -118,3 +118,32 @@
         }
     }
 }
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .pay-card {
+        &__wrap {
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &__text {
+            max-width: 100%;
+            margin-bottom: 5px;
+        }
+
+        &__sum {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        &__transfer {
+            justify-content: center;
+        }
+
+        &__comission {
+            margin-top: 10px;
+        }
+    }
+}
