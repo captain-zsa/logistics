@@ -137,6 +137,12 @@
             float: right;
             max-width: 480px;
         }
+
+        &__operation {
+            &--replenish {
+                margin-top: 0;
+            }
+        }
     }
 }
 

@@ -38,3 +38,26 @@
         border-top: 1px solid $silver-normal;
     }
 }
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .replenish {
+        &__label-wrap {
+            .label {
+                font-size: 15px;
+            }
+
+            &--summ {
+                .label {
+                    max-width: 150px;
+                }
+            }
+        }
+
+        &__wrap-button {
+            .text {
+                max-width: 250px;
+            }
+        }
+    }
+}
