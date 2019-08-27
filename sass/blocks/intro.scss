@@ -19,4 +19,21 @@
             vertical-align: middle;
         }
     }
+
+    &__btn {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 20px;
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .intro {
+        &__btn {
+            display: block;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
 }
