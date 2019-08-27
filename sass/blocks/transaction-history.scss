@@ -1,0 +1,145 @@
+.transaction-history {
+    $bl: '.transaction-history';
+    background-color: $u-white;
+    padding: 25px 30px;
+    padding-bottom: 0;
+
+    &__filter {
+        @include flex(wrap, flex-start);
+    }
+
+    &__select {
+        margin-left: 24px;
+        margin-right: 10px;
+        min-width: 186px;
+    }
+
+    &__search {
+        flex-grow: 1;
+    }
+
+    &__currency {
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 10px;
+        min-width: 126px;
+    }
+
+    &__list {
+        @include clear-ul;
+    }
+
+    &__item {
+        position: relative;
+        @include flex;
+        justify-content: flex-start;
+        padding: 25px 0;
+        border-bottom: 1px solid $silver-normal;
+        transition: 0.3s;
+
+        &:after,
+        &:before {
+            opacity: 0;
+            content: '';
+            width: 30px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -30px;
+            background-color: $u-yellow;
+            transition: 0.3s;
+        }
+        &:after {
+            right: -30px;
+            left: auto;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover,
+        &--active {
+             background-color: $u-yellow;
+
+             &:before,
+             &:after {
+                opacity: 1;
+             }
+
+             #{$bl}__icon {
+                background-color: $u-white;
+             }
+        }
+    }
+
+    &__icon {
+        position: relative;
+        min-width: 35px;
+        min-height: 35px;
+        max-width: 35px;
+        max-height: 35px;
+        border-radius: 50%;
+        background-color: $silver-normal;
+        margin-right: 11px;
+        transition: 0.3s;
+
+        svg {
+            @include center;
+            max-width: 19px;
+            max-height: 22px;
+            fill: $font-color-main;
+        }
+    }
+
+    &__desc {
+        margin-right: auto;
+    }
+
+    &__sum {
+        margin-left: 20px;
+        text-align: right;
+        min-width: 70px;
+    }
+}
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .transaction-history {
+        &__search {
+            margin-top: 10px;
+            order: 2;
+        }
+
+        &__currency {
+            margin-top: 0;
+            order: 1;
+        }
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .transaction-history {
+        &__search {
+            order: 1;
+            margin-top: 0;
+            width: 70%;
+            margin-left: 10px;
+        }
+
+        &__select {
+            order: 2;
+            min-width: 170px;
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        &__currency {
+            order: 3;
+            margin-top: 10px;
+            min-width: 35px;
+        }
+    }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ZZ-logistics история транзакций личного кабинета</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Это спрайт c svg иконками -->
+    <div class="none"><include src="build/img/sprite.svg"></include></div>
+
+    <header class="main  top">
+        <img src="img/logo.svg" alt="Topzakazz logistics logo" class="top__logo">
+        <a href="#" class="text  text--uppercase  text--regular  text--main  top__exit">Выход</a>
+    </header>
+
+    <section class="main  user-box">
+        <p class="user-box__text">
+            <small class="text  text--little  text--regular">Здравствуйте,</small>
+            <span class="text  text--uppercase  text--bold  user-box__name">Алексей Хайрутдинов</span>
+        </p>
+        <div class="user-box__balance">
+            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--left">
+                Пополнить
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+            <select name="price" class="select-valuted user-box__select">
+                <option value="4187" selected>RUB</option>
+                <option value="418.7">CNY</option>
+                <option value="65">USD</option>
+            </select>
+            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--right">
+                Вывести
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <main class="main container">
+        <div class="container__part">
+            <ul class="part">
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link  part__link--active  text--bold">мои заказы на выкуп</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои отправки из китая</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои запросы на поиск</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои финансы</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои сообщения</a>
+                </li>
+            </ul>
+
+            <ul class="part  container__user-sidebar">
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">моя информация</a>
+                </li>
+                <li class="part__item">
+                    <a href="change-password.html" class="text  text--uppercase  part__link">изменить пароль</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои адреса</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои социальные сети</a>
+                </li>
+                <li class="part__item  part__item--partner">
+                    <a href="#" class="text  text--uppercase  part__link">моя реферальная программа</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container__center">
+            <div class="intro  container__intro">
+                <h3 class="text  text--uppercase  text--bold  text--big  intro__title">
+                    <img src="img/transaction-history.svg">
+                    <span>История транзакций <br>личного кабинета</span>
+                </h3>
+                <p class="text">В данном разделе отображены все операции по Вашим счетам. Для получения подробной информации по каждой транзакции нажмите на интересующую Вас операцию. Для быстрой навигации воспользуйтесь фильтром и поиском.</p>
+            </div>
+
+            <div class="transaction-history  container__transaction-history">
+                <div class="transaction-history__filter">
+                    <span class="text">История</span>
+                    <div class="select  select--small  select--inline  transaction-history__select">
+                        <div class="select__param">Все операции</div>
+                        <div class="select__list">
+                            <div class="select__item" data-value="Все операции"><b>Все операции</b></div>
+                            <div class="select__item" data-value="Пополнения">Пополнения</div>
+                            <div class="select__item" data-value="Вывод">Вывод</div>
+                            <div class="select__item" data-value="Платежи">Платежи</div>
+                            <div class="select__item" data-value="Реферальный бонус">Реферальный бонус</div>
+                        </div>
+                    </div>
+                    <form action="#" method="post" class="search  transaction-history__search">
+                        <input type="text" class="input  input--max" placeholder="Поиск по операции">
+                        <button type="submit" class="search__btn-icon">
+                            Найти
+                            <svg><use xlink:href="#search-icon"></use></svg>
+                        </button>
+                    </form>
+                    <div class="select  select--small  select--inline  transaction-history__currency">
+                        <div class="select__param">$<span class="l-hidden_mobile">, доллары</span></div>
+                        <div class="select__list">
+                            <div class="select__item" data-value="доллары">$<span class="l-hidden_mobile">, доллары</span></div>
+                            <div class="select__item" data-value="юани">¥<span class="l-hidden_mobile">, юани</span></div>
+                            <div class="select__item" data-value="рубли">₽<span class="l-hidden_mobile">, рубли</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="transaction-history__list">
+                    <li class="transaction-history__item">
+                        <div class="transaction-history__icon"><svg><use xlink:href="#icon-box"></use></svg></div>
+                        <div class="text  transaction-history__desc  text--small_mobile">
+                            Оплата, Заказ на выкуп №1
+                            <p class="text  text--little  text--silver">22.11.2018</p>
+                        </div>
+                        <span class="text  text--bold  text--big  transaction-history__sum  text--normal_mobile">- 1020 ¥</span>
+                    </li>
+                    <li class="transaction-history__item">
+                        <div class="transaction-history__icon"><svg><use xlink:href="#icon-money"></use></svg></div>
+                        <div class="text  transaction-history__desc  text--small_mobile">
+                            Пополнение, Баланс личного кабинета
+                            <p class="text  text--little  text--silver">22.11.2018</p>
+                        </div>
+                        <span class="text  text--bold  text--big  text--green  transaction-history__sum  text--normal_mobile">+ 5 321 ¥</span>
+                    </li>
+                    <li class="transaction-history__item">
+                        <div class="transaction-history__icon"><svg><use xlink:href="#icon-percentage"></use></svg></div>
+                        <div class="text  transaction-history__desc  text--small_mobile">
+                            Начисление реферального бонуса
+                            <p class="text  text--little  text--silver">22.11.2018</p>
+                        </div>
+                        <span class="text  text--bold  text--big  text--green  transaction-history__sum  text--normal_mobile">+ 4.53 $</span>
+                    </li>
+                    <li class="transaction-history__item  transaction-history__item--active">
+                        <div class="transaction-history__icon"><svg><use xlink:href="#icon-wallet"></use></svg></div>
+                        <div class="text  transaction-history__desc  text--small_mobile">
+                            Вывод средств с баланса личного кабинета
+                            <p class="text  text--little  text--silver">22.11.2018</p>
+                        </div>
+                        <span class="text  text--bold  text--big  text--green  transaction-history__sum  text--normal_mobile">- 1020 ¥</span>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="pagination">
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">
+                        <svg class="arrow  arrow--left" aria-label="На предыдущую страницу">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link  pagination__link--active">2</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">&#133;</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">14</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">
+                        <svg class="arrow  arrow--right" aria-label="На следующую страницу">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container__additionally"></div>
+    </main>
+
+    <div class="popup  popup--wechatpay">
+        <a class="cross  popup__close"><svg><use xlink:href="#cross"></use></svg></a>
+        <img src="img/wechatpayalexey.png">
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -99,16 +99,15 @@
         margin-bottom: 30px;
     }
 
-    &__replenish {
-        background-color: #fff;
-        padding: 25px 30px;
-    }
-
     &__payment-information {
         margin-top: 10px;
     }
 
     &__intro {
+        margin-bottom: 30px;
+    }
+
+    &__transaction-history {
         margin-bottom: 30px;
     }
 }
