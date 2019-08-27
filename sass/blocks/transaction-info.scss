@@ -1,0 +1,37 @@
+.transaction-info {
+    background-color: $u-white;
+    padding: 20px;
+    position: relative;
+
+    &__close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    &__title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    &__details {
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px solid $silver-normal;
+    }
+
+    &__hint {
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    &__line {
+        margin: 2px 0;
+        @include flex;
+
+        span {
+            margin-right: auto;
+            margin-left: 0;
+        }
+    }
+}
