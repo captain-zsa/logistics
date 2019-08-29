@@ -1,5 +1,6 @@
 .label {
     display: block;
+    position: relative;
 
     span {
         display: block;
@@ -30,6 +31,24 @@
         &--margin {
             &_minus {
                 margin-bottom: -10px;
+            }
+        }
+    }
+
+    &__help {
+        position: absolute;
+        right: 0;
+        top: 2px;
+
+        svg {
+            width: 12px;
+            height: 12px;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            svg {
+                fill: $font-color-green;
             }
         }
     }

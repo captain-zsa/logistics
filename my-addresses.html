@@ -163,6 +163,100 @@
                     <p class="text  text--little">Это ваш адрес доставки по умолчанию</p>
                 </div>
             </div>
+
+            <div class="my-addresses container__my-addresses-new">
+                <form action="#" method="post">
+                    <h4 class="text text--bold  l-margin-bottom_normal">Укажите получателя</h4>
+                    <div class="l-flex  l-flex--jc_sb  l-margin-bottom_normal  l-flex--wrap_mobile">
+                        <label class="label l-flex__third  l-flex__third--max_mobile l-margin-bottom_normal_mobile">
+                            <span class="text">Фамилия</span>
+                            <input type="text" class="input  input--max" placeholder="Введите вашу фамилию">
+                        </label>
+                        <label class="label l-flex__third  l-flex__third--max_mobile l-margin-bottom_normal_mobile">
+                            <span class="text">Имя</span>
+                            <input type="text" class="input  input--max" placeholder="Введите ваше имя">
+                        </label>
+                        <label class="label l-flex__third  l-flex__third--max_mobile">
+                            <span class="text">Отчество</span>
+                            <input type="text" class="input  input--max" placeholder="Введите ваше отчество">
+                        </label>
+                    </div>
+                    <div class="l-flex l-flex--jc_sb l-margin-bottom_normal  l-flex--wrap_mobile">
+                        <label class="label l-flex__half  l-flex__half--max  l-flex__half--max_mobile  l-margin-bottom_normal_mobile">
+                            <span class="text">Контактный номер телефона:</span>
+                            <input type="text" class="input  input--max" placeholder="Введите номер телефона">
+                        </label>
+                        <label class="label l-flex__half  l-flex__half--max  l-flex__half--max_mobile">
+                            <span class="text">Резервный номер телефона:</span>
+                            <input type="text" class="input  input--max" placeholder="Введите номер телефона">
+                        </label>
+                    </div>
+                    <label class="label  l-margin-bottom_big">
+                        <span class="text">Паспортные данные:</span>
+                        <input type="text" class="input  input--max" placeholder="Введите паспортные данные">
+                        <a title="Некоторые транспортные компании запрашивают паспортные данные получателя груза. Пожалуйста, укажите их заранее" class="label__help"><svg><use xlink:href="#icon-information"></use></svg></a>
+                    </label>
+                    <h4 class="text text--bold  l-margin-bottom_normal">Укажите адрес доставки груза</h4>
+                    <div class="l-flex l-flex--jc_sb l-margin-bottom_normal  l-flex--wrap_mobile">
+                        <label class="label l-flex__half  l-flex__half--max  l-flex__half--max_mobile  l-margin-bottom_normal_mobile">
+                            <span class="text">Область или край:</span>
+                            <input type="text" class="input  input--max" placeholder="Введите область или край">
+                        </label>
+                        <label class="label l-flex__half  l-flex__half--max  l-flex__half--max_mobile">
+                            <span class="text">Город:</span>
+                            <input type="text" class="input  input--max" placeholder="Введите город">
+                        </label>
+                    </div>
+                    <div class="l-flex l-flex--jc_sb l-margin-bottom_normal  l-flex--wrap_mobile">
+                        <label class="label l-flex__half  l-flex__half--max  l-flex__half--max_mobile  l-margin-bottom_normal_mobile">
+                            <span class="text">Улица:</span>
+                            <input type="text" class="input  input--max" placeholder="Введите область или край">
+                        </label>
+                        <div class="l-flex  l-flex--jc_sb  l-flex__half  l-flex__half--max  l-flex__half--max_mobile">
+                            <label class="label l-flex__half">
+                                <span class="text">Дом:</span>
+                                <input type="text" class="input  input--max" placeholder="Введите номер дома">
+                            </label>
+                            <label class="label l-flex__half">
+                                <span class="text">Квартира:</span>
+                                <input type="text" class="input  input--max" placeholder="Введите номер квартиры">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="l-flex  l-flex--jc_sb  l-margin-bottom_normal">
+                        <label class="label l-flex__half  l-flex__half--max">
+                            <span class="text">Индекс:</span>
+                            <input type="text" class="input  input--max" placeholder="Введите индекс">
+                        </label>
+                        <label class="label l-flex__half  l-flex__half--max">
+                            <span class="text">Страна:</span>
+                            <input type="text" class="input  input--max" placeholder="Введите название страны">
+                        </label>
+                    </div>
+                    <div class="l-flex  l-flex--top  l-flex--jc_sb  l-margin-bottom_big  l-flex--wrap_mobile">
+                        <div class="l-flex__half  l-flex__half--max  l-flex__half--max_mobile">
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" checked>
+                                <span>Требуется доставка до двери</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" checked>
+                                <span>Использовать этот адрес доставки по умолчанию</span>
+                            </label>
+                        </div>
+                        <label class="checkbox l-flex__half  l-flex__half--max  l-flex__half--max_mobile">
+                            <input type="checkbox" name="check" disabled>
+                            <span>Требуется доставка до пункта выдачи заказов транспортной компании</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn  btn--arrow  l-margin-left_auto">
+                        Сохранить
+                        <svg class="arrow  arrow--right">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
 
         <div class="container__additionally"></div>

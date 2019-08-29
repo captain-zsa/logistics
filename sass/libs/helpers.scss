@@ -41,6 +41,10 @@
         width: 32.2%;
     }
 
+    &--wrap {
+        flex-wrap: wrap;
+    }
+
     &--top {
         align-items: flex-start;
     }
@@ -51,8 +55,20 @@
 }
 
 .l-margin {
-    &-bottom_normal {
-        margin-bottom: 16px;
+    &-bottom {
+        &_normal {
+            margin-bottom: 16px;
+        }
+
+        &_big {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-left {
+        &_auto {
+            margin-left: auto;
+        }
     }
 }
 
