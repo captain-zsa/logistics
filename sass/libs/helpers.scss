@@ -31,10 +31,28 @@
 
     &__half {
         width: 48%;
+
+        &--max {
+            width: 49%;
+        }
+    }
+
+    &__third {
+        width: 32.2%;
     }
 
     &--top {
         align-items: flex-start;
+    }
+
+    &--jc_sb {
+        justify-content: space-between;
+    }
+}
+
+.l-margin {
+    &-bottom_normal {
+        margin-bottom: 16px;
     }
 }
 
@@ -68,10 +86,17 @@
             flex-wrap: wrap;
         }
 
-        &__half {
+        &__half,
+        &__third {
             &--max_mobile {
                 width: 100%;
             }
+        }
+    }
+
+    .l-margin {
+        &-bottom_normal_mobile {
+            margin-bottom: 16px;
         }
     }
 }

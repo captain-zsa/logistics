@@ -23,4 +23,26 @@
     &--alert {
         background-color: $u-alarm;
     }
+
+    &--content {
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+
+        &:after,
+        &:before {
+            position: absolute;
+            left: -30px;
+            top: 0;
+            background-color: $u-yellow;
+            height: 100%;
+            width: 30px;
+            content: '';
+        }
+
+        &:after {
+            right: -30px;
+            left: auto;
+        }
+    }
 }

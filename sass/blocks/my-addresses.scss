@@ -1,0 +1,21 @@
+.my-addresses {
+    background-color: $u-white;
+    padding: 30px;
+    position: relative;
+
+    &--padding-bottom_none {
+        padding-bottom: 0;
+    }
+
+    &__close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    &__marker {
+        position: absolute;
+        right: 58px;
+        top: 30px;
+    }
+}
