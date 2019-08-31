@@ -71,6 +71,19 @@
                 background-color: $u-white;
              }
         }
+
+        &--error {
+            #{$bl}__icon {
+                svg {
+                    fill: $silver-error;
+                }
+            }
+
+            #{$bl}__desc,
+            #{$bl}__sum {
+                color: $font-color-silver;
+            }
+        }
     }
 
     &__icon {
