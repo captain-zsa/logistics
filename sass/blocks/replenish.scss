@@ -42,6 +42,16 @@
         margin-top: 30px;
         border-top: 1px solid $silver-normal;
     }
+
+    &__plea {
+        max-width: 240px;
+    }
+
+    &__cancel {
+        margin-left: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 /*Планшет*/
@@ -59,10 +69,8 @@
             }
         }
 
-        &__wrap-button {
-            .text {
-                max-width: 250px;
-            }
+        &__plea {
+            max-width: 150px;
         }
     }
 }
@@ -103,6 +111,10 @@
             .text {
                 margin-bottom: 10px;
             }
+        }
+
+        &__plea {
+            max-width: 100%;
         }
     }
 }
