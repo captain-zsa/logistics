@@ -1,0 +1,31 @@
+.operation-result {
+    background-color: $u-white;
+    padding: 30px;
+
+    &__wrap {
+        @include flex;
+        justify-content: flex-start;
+        margin-top: 25px;
+    }
+
+    &__icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .operation-result {
+
+        &__wrap {
+            margin-top: 15px;
+        }
+
+        &__icon {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
