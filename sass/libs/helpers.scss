@@ -64,8 +64,23 @@
             margin-bottom: 20px;
         }
     }
+    &-top {
+        &_normal {
+            margin-top: 16px;
+        }
+
+        &_big {
+            margin-top: 20px;
+        }
+    }
 
     &-left {
+        &_auto {
+            margin-left: auto;
+        }
+    }
+
+    &-right {
         &_auto {
             margin-left: auto;
         }

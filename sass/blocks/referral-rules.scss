@@ -1,0 +1,136 @@
+.referral-rules {
+    background-color: $u-white;
+    padding: 30px;
+    padding-bottom: 29px;
+
+    &__img {
+        display: none;
+        max-width: 100%;
+
+        &--desctop {
+            display: block;
+        }
+    }
+
+    &__map {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        padding-left: 47px;
+        position: relative;
+
+        b {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1;
+            position: relative;
+            z-index: 2;
+        }
+        small {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1;
+            position: relative;
+            z-index: 2;
+        }
+
+        &:before {
+            content: '';
+            width: 126px;
+            height: 126px;
+            background-color: $silver-normal;
+            border-radius: 50%;
+            border-left: 5px solid $u-orange;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            z-index: 1;
+        }
+
+        &:after {
+            content: '';
+            background: url(../img/arrow-round-bottom.svg);
+            background-size: cover;
+            width: 67px;
+            height: 54px;
+            position: absolute;
+            left: 230px;
+            top: 50px;
+        }
+
+        &--delivery {
+            &:after {
+                left: -75px;
+                transform: scale(-1, 1);
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 3px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__wrap {
+        @include flex;
+    }
+}
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .referral-rules {
+        &__item {
+            padding-left: 40px;
+
+            &:before {
+                width: 100px;
+                height: 100px;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .referral-rules {
+        padding: 20px;
+
+        &__img {
+            &--desctop {
+                display: none;
+            }
+
+            &--top,
+            &--bottom {
+                display: block;
+            }
+        }
+
+        &__map {
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__wrap {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.referral-table {
+    padding: 12px 20px;
+    padding-bottom: 25px;
+    background-color: $u-white;
+    overflow-x: scroll;
+}
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .referral-table {
+        padding: 12px 0;
+        overflow-x: scroll;
+    }
+}

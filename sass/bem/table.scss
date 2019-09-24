@@ -2,6 +2,7 @@
     $bl: ".table";
     width: 100%;
     border-collapse: collapse;
+
     &__cell {
         padding: 12px 0;
         &:first-child {
@@ -30,8 +31,60 @@
             }
         }
     }
+
+    &__title {
+        font-weight: 300;
+        text-align: left;
+        font-size: $font-size-little;
+    }
+
+    &--big {
+        font-size: $font-size-small;
+
+        #{$bl}__cell,
+        #{$bl}__title {
+            padding: 12px 10px;
+            border-bottom: 1px solid $silver-normal;
+            border-left: 1px solid $silver-normal;
+
+            &:first-child {
+                padding-left: 0;
+                border-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        #{$bl}__cell {
+            &:nth-child(3),
+            &:nth-last-child(2),
+            &:last-child {
+                white-space: nowrap;
+            }
+        }
+    }
+
 }
 
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .table {
+        $bl: ".table";
+        &--big {
+            #{$bl}__cell,
+            #{$bl}__title {
+                &:first-child {
+                    padding-left: 15px;
+                }
+                &:last-child {
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}
 
 /*Мобильные*/
 @media (max-width: $tablet-width - 2) {

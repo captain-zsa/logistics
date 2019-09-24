@@ -1,0 +1,116 @@
+.referral-statistics {
+    $bl: ".referral-statistics";
+
+    &__wrap {
+        @include flex;
+        margin-top: 30px;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 20px;
+        width: 80px;
+    }
+
+    &__box {
+        background-color: $u-white;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 27px 0;
+        padding-left: 100px;
+        box-sizing: border-box;
+
+        &::before {
+            width: 165px;
+            height: 165px;
+            position: absolute;
+            left: -85px;
+            bottom: -28px;
+            background-color: #ffb800;
+            content: '';
+            border-radius: 50%;
+        }
+
+        &--registers {
+            max-width: 243px;
+
+            #{$bl}__icon {
+                top: 54px;
+                height: 58px;
+            }
+        }
+
+        &--paid {
+            max-width: 320px;
+
+            #{$bl}__icon {
+                top: 48px;
+                height: 84px;
+            }
+        }
+
+        &--earned {
+            max-width: 283px;
+
+            #{$bl}__icon {
+                top: 39px;
+                height: 88px;
+            }
+        }
+    }
+
+    &__number {
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 15px;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 15px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 86px;
+            height: 1px;
+            background-color: $font-color-main;
+            content: '';
+        }
+
+        small {
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+}
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .referral-statistics {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+
+        &__box {
+            margin-top: 20px;
+            max-width: 320px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .referral-statistics {
+        &__box {
+            max-width: 100%;
+        }
+    }
+}

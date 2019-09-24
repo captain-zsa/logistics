@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ZZ-logistics Моя реферральная программа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Это спрайт c svg иконками -->
+    <div class="none"><include src="build/img/sprite.svg"></include></div>
+
+    <header class="main  top">
+        <img src="img/logo.svg" alt="Topzakazz logistics logo" class="top__logo">
+        <a href="#" class="text  text--uppercase  text--regular  text--main  top__exit">Выход</a>
+    </header>
+
+    <section class="main  user-box">
+        <p class="user-box__text">
+            <small class="text  text--little  text--regular">Здравствуйте,</small>
+            <span class="text  text--uppercase  text--bold  user-box__name">Алексей Хайрутдинов</span>
+        </p>
+        <div class="user-box__balance">
+            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--left">
+                Пополнить
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+            <select name="price" class="select-valuted user-box__select">
+                <option value="4187" selected>RUB</option>
+                <option value="418.7">CNY</option>
+                <option value="65">USD</option>
+            </select>
+            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--right">
+                Вывести
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <main class="main container">
+        <div class="container__part">
+            <ul class="part">
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои заказы на выкуп</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои отправки из китая</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои запросы на поиск</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои финансы</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои сообщения</a>
+                </li>
+            </ul>
+
+            <ul class="part  container__user-sidebar">
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">моя информация</a>
+                </li>
+                <li class="part__item">
+                    <a href="change-password.html" class="text  text--uppercase  part__link">изменить пароль</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои адреса</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои социальные сети</a>
+                </li>
+                <li class="part__item  part__item--partner">
+                    <a href="#" class="text  text--uppercase  part__link  part__link--active  text--bold">моя реферальная программа</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container__center  container__center--max">
+            <div class="referral-desc">
+                <div class="referral-desc__wrap">
+                    <h3 class="text  text--bold  text--uppercase  text--big  text--icon">
+                        <svg><use xlink:href="#shout"></use></svg>
+                        <span>Расскажите о нас друзьям <br>и зарабатывайте бесконечно много</span>
+                    </h3>
+                    <p class="text text--bold l-margin-top_big">Как это работает?</p>
+                    <ol class="text  referral-desc__list">
+                        <li>Вы <b class="text__bold">делитесь своей реферальной ссылкой</b> в любых социальных сетях и мессенджерах.</li>
+                        <li>Люди переходят на сайт, регистрируются в личном кабинете и начинают <b class="text__bold">пользоваться услугами нашей компании.</b></li>
+                        <li>Вы <b class="text__bold">получаете деньги с каждой оплаченной услуги</b> согласно действующим условиям реферальной программы.</li>
+                    </ol>
+                </div>
+                <div class="referral-desc__link">
+                    <div class="referral-desc__box">
+                        <p class="text  referral-desc__label">А вот и Ваша реферальная<br>ссылка, приносящая деньги ; )</p>
+                        <input type="text" class="referral-desc__input" value="http://zzlogistics.ru/?=ref0000001" readonly>
+                        <button class="referral-desc__copy"><svg><use xlink:href="#copy"></use></svg></button>
+                    </div>
+                    <p class="text text--big text--bold  text--align_center">Вы уже решили, на что потратите эти деньги?</p>
+                </div>
+            </div>
+
+            <div class="referral-rules  container__referral-rules">
+                <h3 class="text  text--bold  text--uppercase  text--big  text--icon">
+                    <svg><use xlink:href="#money-bag"></use></svg>
+                    <span>За оплату каких услуг <br>мы начисляем деньги?</span>
+                </h3>
+                <div class="referral-rules__map">
+                    <div class="referral-rules__wrap">
+                        <div class="referral-rules__item  referral-rules__item--buyout">
+                            <b>1</b><small>%</small>
+                            <p class="text text--bold  text--uppercase  text--big  referral-rules__text">выкуп товара<br>с китайских сайтов</p>
+                        </div>
+                        <img src="img/referral-map_top.png" class="referral-rules__img  referral-rules__img--top">
+                        <div class="referral-rules__item  referral-rules__item--delivery">
+                            <b>7</b><small>₽/кг</small>
+                            <p class="text text--bold  text--uppercase  text--big  referral-rules__text">доставка груза <br>из китая в рф и снг</p>
+                        </div>
+                    </div>
+                    <img src="img/referral-map_bottom.png" class="referral-rules__img  referral-rules__img--bottom">
+                    <img src="img/referral-map.png" class="referral-rules__img  referral-rules__img--desctop">
+                </div>
+                <p class="text">На сегодняшний день мы начисляем деньги по реферальной программе <b class="text__bold">за оплату двух основных услуг нашей компании:</b> выкуп товара с китайских сайтов и отправка груза из Китая в РФ и СНГ.</p>
+                <p class="text">Важно отметить, что <b class="text__bold">большинство клиентов нуждаются в обеих услугах</b> при работе с Китаем. Это означает, что если Ваш реферал воспользовался услугой “Вы куп товара с китайских сайтов”, то, вероятнее всего, он воспользуется и второй услугой “Доставка товара из Китая”. В таком случае Вы получите реферальные отчисления по каждой из этих услуг.</p>
+                <p class="text l-margin-top_normal">При этом, если Ваши рефералы заинтересованы только в доставке товара из Китая и пользуются только этой услугой, Вы имеете возможность получать реферальные отчисления с каждой отправки.</p>
+            </div>
+
+            <div class="referral-statistics">
+                <h3 class="text  text--bold  text--uppercase  text--big  text--icon">
+                    <svg><use xlink:href="#referral-statistics"></use></svg>
+                    <span>полностью прозрачная статистика, <br>где каждая регистрация под присмотром</span>
+                </h3>
+                <div class="referral-statistics__wrap">
+                    <div class="referral-statistics__box  referral-statistics__box--registers">
+                        <svg class="referral-statistics__icon"><use xlink:href="#stat-registers"></use></svg>
+                        <p class="referral-statistics__number">105</p>
+                        <p class="text  text--align_center">Количество<br>регистраций</p>
+                    </div>
+                    <div class="referral-statistics__box  referral-statistics__box--paid">
+                        <svg class="referral-statistics__icon"><use xlink:href="#stat-paid"></use></svg>
+                        <p class="referral-statistics__number">5 327 000<small>₽</small></p>
+                        <p class="text  text--align_center">Оплачено Вашими<br>рефералами</p>
+                    </div>
+                    <div class="referral-statistics__box  referral-statistics__box--earned">
+                        <svg class="referral-statistics__icon"><use xlink:href="#money-bag"></use></svg>
+                        <p class="referral-statistics__number">53 270<small>₽</small></p>
+                        <p class="text  text--align_center">Заработано<br>в программе</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-table  container__referral-table">
+                <table class="table  table--big">
+                    <thead>
+                        <tr class="table__row">
+                            <th class="table__title">№</th>
+                            <th class="table__title">Дата</th>
+                            <th class="table__title">Реферрал</th>
+                            <th class="table__title">Источник кампании (utm_source)</th>
+                            <th class="table__title">Тип трафика (utm_medium)</th>
+                            <th class="table__title">Название кампании (utm_campaign)</th>
+                            <th class="table__title">Идентификатор объявления (utm_content)</th>
+                            <th class="table__title">Ключевое слово (utm_term)</th>
+                            <th class="table__title">Оплата услуги</th>
+                            <th class="table__title">Реферальный бонус</th>
+                        </tr>
+                    </thead>
+                    <tr class="table__row">
+                        <td class="table__cell">1</td>
+                        <td class="table__cell">23.08.2019</td>
+                        <td class="table__cell">А***н К***в</td>
+                        <td class="table__cell">google</td>
+                        <td class="table__cell">email</td>
+                        <td class="table__cell">promo</td>
+                        <td class="table__cell">link</td>
+                        <td class="table__cell">free</td>
+                        <td class="table__cell">235 600 ₽</td>
+                        <td class="table__cell">2 356 ₽</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">2</td>
+                        <td class="table__cell">22.08.2019</td>
+                        <td class="table__cell">Б***с О***в</td>
+                        <td class="table__cell">yandex</td>
+                        <td class="table__cell">email</td>
+                        <td class="table__cell">discount</td>
+                        <td class="table__cell">landing page</td>
+                        <td class="table__cell">-30%</td>
+                        <td class="table__cell">1 200 ₽</td>
+                        <td class="table__cell">12 ₽</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">3</td>
+                        <td class="table__cell">22.08.2019</td>
+                        <td class="table__cell">И***а К***я</td>
+                        <td class="table__cell">vk</td>
+                        <td class="table__cell">cpc</td>
+                        <td class="table__cell">discount</td>
+                        <td class="table__cell">landing page</td>
+                        <td class="table__cell">-30%</td>
+                        <td class="table__cell">23 600 ¥</td>
+                        <td class="table__cell">236 ¥</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">4</td>
+                        <td class="table__cell">21.08.2019</td>
+                        <td class="table__cell">М***л С***в</td>
+                        <td class="table__cell">facebook</td>
+                        <td class="table__cell">banner</td>
+                        <td class="table__cell">promo</td>
+                        <td class="table__cell">link</td>
+                        <td class="table__cell">free</td>
+                        <td class="table__cell">16 200 $</td>
+                        <td class="table__cell">162 $</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">5</td>
+                        <td class="table__cell">21.08.2019</td>
+                        <td class="table__cell">М***к А***о</td>
+                        <td class="table__cell">vk</td>
+                        <td class="table__cell">cpc</td>
+                        <td class="table__cell">promo</td>
+                        <td class="table__cell">link</td>
+                        <td class="table__cell">free</td>
+                        <td class="table__cell">93 600 ₽</td>
+                        <td class="table__cell">936 ₽</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">6</td>
+                        <td class="table__cell">20.08.2019</td>
+                        <td class="table__cell">А***н К***в</td>
+                        <td class="table__cell">facebook</td>
+                        <td class="table__cell">banner</td>
+                        <td class="table__cell">sale</td>
+                        <td class="table__cell">link</td>
+                        <td class="table__cell">free</td>
+                        <td class="table__cell">1 200 $</td>
+                        <td class="table__cell">12 $</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">7</td>
+                        <td class="table__cell">20.08.2019</td>
+                        <td class="table__cell">И***а К***я</td>
+                        <td class="table__cell">facebook</td>
+                        <td class="table__cell">banner</td>
+                        <td class="table__cell">promo</td>
+                        <td class="table__cell">link</td>
+                        <td class="table__cell">free</td>
+                        <td class="table__cell">23 600 ¥</td>
+                        <td class="table__cell">236 ¥</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">8</td>
+                        <td class="table__cell">20.08.2019</td>
+                        <td class="table__cell">Б***с О***в</td>
+                        <td class="table__cell">yandex</td>
+                        <td class="table__cell">article</td>
+                        <td class="table__cell">sale</td>
+                        <td class="table__cell">landing page</td>
+                        <td class="table__cell">registration</td>
+                        <td class="table__cell">16 200 ₽</td>
+                        <td class="table__cell">162 ₽</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">9</td>
+                        <td class="table__cell">20.08.2019</td>
+                        <td class="table__cell">И***а К***я</td>
+                        <td class="table__cell">google</td>
+                        <td class="table__cell">email</td>
+                        <td class="table__cell">discount</td>
+                        <td class="table__cell">landing page</td>
+                        <td class="table__cell">registration</td>
+                        <td class="table__cell">93 600 ₽</td>
+                        <td class="table__cell">936 ₽</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">10</td>
+                        <td class="table__cell">19.08.2019</td>
+                        <td class="table__cell">А***н К***в</td>
+                        <td class="table__cell">google</td>
+                        <td class="table__cell">email</td>
+                        <td class="table__cell">discount</td>
+                        <td class="table__cell">landing page</td>
+                        <td class="table__cell">-30%</td>
+                        <td class="table__cell">67 500 ¥</td>
+                        <td class="table__cell">675 ¥</td>
+                    </tr>
+                </table>
+            </div>
+
+            <ul class="pagination">
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">
+                        <svg class="arrow  arrow--left" aria-label="На предыдущую страницу">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link  pagination__link--active">2</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">&#133;</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">14</a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__link">
+                        <svg class="arrow  arrow--right" aria-label="На следующую страницу">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="promo  container__promo">
+                <h3 class="text text--uppercase text--bold  text--big">Промо материалы для рекламной кампании</h3>
+                <ul class="promo__list">
+                    <li class="promo__item">
+                        <img src="img/promo-1.jpg" class="promo__img-min">
+                        <button class="promo__magnifier" type="button"><svg><use xlink:href="#zoom"></use></svg></button>
+                    </li>
+                    <li class="promo__item">
+                        <img src="img/promo-2.jpg" class="promo__img-min">
+                        <button class="promo__magnifier" type="button"><svg><use xlink:href="#zoom"></use></svg></button>
+                    </li>
+                    <li class="promo__item">
+                        <img src="img/promo-3.jpg" class="promo__img-min">
+                        <button class="promo__magnifier" type="button"><svg><use xlink:href="#zoom"></use></svg></button>
+                    </li>
+                    <li class="promo__item">
+                        <img src="img/promo-4.jpg" class="promo__img-min">
+                        <button class="promo__magnifier" type="button"><svg><use xlink:href="#zoom"></use></svg></button>
+                    </li>
+                    <li class="promo__item">
+                        <img src="img/promo-1.jpg" class="promo__img-min">
+                        <button class="promo__magnifier" type="button"><svg><use xlink:href="#zoom"></use></svg></button>
+                    </li>
+                    <li class="promo__item">
+                        <img src="img/promo-2.jpg" class="promo__img-min">
+                        <button class="promo__magnifier" type="button"><svg><use xlink:href="#zoom"></use></svg></button>
+                    </li>
+                    <li class="promo__item">
+                        <img src="img/promo-3.jpg" class="promo__img-min">
+                        <button class="promo__magnifier" type="button"><svg><use xlink:href="#zoom"></use></svg></button>
+                    </li>
+                    <li class="promo__item">
+                        <img src="img/promo-4.jpg" class="promo__img-min">
+                        <button class="promo__magnifier" type="button"><svg><use xlink:href="#zoom"></use></svg></button>
+                    </li>
+                </ul>
+                <div class="promo__wrap">
+                    <p class="text  text--align_right">Скачать все материалы <br>в архиве</p>
+                    <a href="#" class="btn  btn--border promo__btn">Скачать</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="popup  popup--wechatpay">
+        <a class="cross  popup__close"><svg><use xlink:href="#cross"></use></svg></a>
+        <img src="img/wechatpayalexey.png">
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

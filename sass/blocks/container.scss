@@ -22,6 +22,12 @@
     &__center {
         max-width: 584px;
         width: 100%;
+
+        &--max {
+            max-width: 100%;
+            flex-grow: 1;
+            margin-left: 30px;
+        }
     }
 
     &__additionally {
@@ -118,6 +124,20 @@
     &__operation-result {
         margin-bottom: 15px;
     }
+
+    &__promo {
+        margin-top: 30px;
+    }
+
+    &__referral-table {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    &__referral-rules {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 /*Планшет*/
@@ -143,6 +163,10 @@
         &__center {
             float: right;
             max-width: 480px;
+
+            &--max {
+                margin-left: 0;
+            }
         }
 
         &__operation {
@@ -166,6 +190,10 @@
         &__center {
             margin-top: 20px;
             margin-bottom: 20px;
+
+            &--max {
+                margin-left: 0;
+            }
         }
 
         &__order {

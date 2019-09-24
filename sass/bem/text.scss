@@ -61,6 +61,17 @@
         color: $font-color-green;
     }
 
+    &--align {
+
+        &_center {
+            text-align: center;
+        }
+
+        &_right {
+            text-align: right;
+        }
+    }
+
     &--box {
         padding: 10px 25px;
         display: inline-block;
@@ -87,6 +98,16 @@
 
     &__bold {
         font-weight: 700;
+    }
+
+    &--icon {
+        @include flex;
+        justify-content: flex-start;
+        svg {
+            width: 38px;
+            height: 38px;
+            margin-right: 10px;
+        }
     }
 }
 
@@ -118,6 +139,17 @@
 
         &--little_mobile {
             font-size: $font-size-little;
+        }
+
+        &--icon {
+            svg {
+                min-width: 30px;
+                min-height: 30px;
+            }
+
+            br {
+                display: none;
+            }
         }
     }
 }

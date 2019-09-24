@@ -1,0 +1,106 @@
+.referral-desc {
+    background-color: $u-white;
+    padding: 30px;
+    padding-bottom: 29px;
+
+    &__list {
+        max-width: 530px;
+        width: 100%;
+        padding-left: 20px;
+        margin-top: 25px;
+
+        li {
+            margin-top: 7px;
+        }
+    }
+
+    &__wrap {
+        background: url(../img/referral-desc.png) no-repeat right bottom;
+        padding-bottom: 35px;
+    }
+
+    &__link {
+        background-color: $u-yellow;
+        padding: 30px;
+    }
+
+    &__box {
+        @include flex;
+        justify-content: flex-start;
+        padding-bottom: 25px;
+        margin-bottom: 23px;
+        border-bottom: 1px solid $silver-large;
+    }
+
+    &__input {
+        margin-left: auto;
+        margin-right: 10px;
+        border: none;
+        outline: none;
+        background-color: $u-white;
+        color: $font-color-main;
+        max-width: 480px;
+        width: 100%;
+        padding: 8px 10px;
+        box-sizing: border-box;
+    }
+
+    &__copy {
+        background-color: $u-white;
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        cursor: pointer;
+
+        svg {
+            width: 14px;
+            height: 18px;
+            transform: translate(0, 3px);
+        }
+    }
+}
+
+/*Планшет*/
+@media (max-width: $desctop-width - 1) {
+    .referral-desc {
+        &__wrap {
+            background: none;
+        }
+
+        &__list {
+            box-sizing: border-box;
+        }
+
+        &__box {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        &__label {
+            text-align: center;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        &__input {
+            max-width: 316px;
+        }
+    }
+}
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .referral-desc {
+        padding: 20px;
+
+        &__link {
+            padding: 10px 0;
+        }
+
+        &__input {
+            max-width: 236px;
+            padding-right: 0;
+        }
+    }
+}
