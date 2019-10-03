@@ -12,7 +12,7 @@
         background-color: $u-white;
         margin-top: 53px;
         padding-top: 43px;
-        padding-bottom: 55px;
+        padding-bottom: 30px;
         padding-right: 71px;
         padding-left: 71px;
     }
@@ -41,9 +41,13 @@
             width: 48%;
         }
 
+        &--password {
+            margin-bottom: -5px;
+        }
+
         span {
             display: block;
-            margin-bottom: 1px;
+            margin-bottom: 5px;
         }
 
         input {
@@ -53,6 +57,20 @@
 
     &__btn {
         width: 100%;
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        margin-top: 20px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
     }
 }
 
@@ -68,7 +86,7 @@
             margin-top: 20px;
             padding-right: 7px;
             padding-left: 7px;
-            padding-bottom: 15px;
+            padding-bottom: 25px;
         }
     }
 }
