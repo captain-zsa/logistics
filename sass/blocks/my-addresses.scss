@@ -18,4 +18,17 @@
         right: 58px;
         top: 30px;
     }
+
+    &__text {
+        margin-bottom: 8px;
+    }
+
+    &__important {
+        margin-top: 30px;
+    }
+
+    &--data {
+        margin-bottom: 30px;
+        padding-bottom: 0;
+    }
 }

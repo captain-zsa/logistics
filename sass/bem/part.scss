@@ -28,13 +28,17 @@
         padding-bottom: 15px;
         transition: border-color 0.3s;
 
-        &:hover:not(&--active) {
+        &:hover:not(&--active):not(&--disabled) {
             border-color: $font-color-blonde;
         }
 
         &--active {
             border-color: $u-orange;
             font-weight: 700;
+        }
+
+        &--disabled {
+            color: $silver-big;
         }
     }
 }

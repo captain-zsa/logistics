@@ -48,6 +48,7 @@
         border: none;
         outline: none;
         padding: 0;
+        overflow: initial;
 
         svg {
             display: block;
@@ -78,7 +79,8 @@
         }
     }
 
-    &__add-line {
+    &__add-line,
+    &__delite-line {
         border: 1px solid $silver-big;
         border-radius: 3px;
         outline: none;
@@ -86,6 +88,17 @@
         height: 40px;
         position: relative;
         background-color: transparent;
+    }
+
+    &__delite-line {
+        align-self: flex-start;
+        cursor: pointer;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            @include center;
+        }
     }
 
     &__arrow {
@@ -102,6 +115,15 @@
             margin-left: -7px;
             margin-right: -7px;
         }
+    }
+
+    &__save {
+        @include flex;
+    }
+
+    &__edit {
+        margin-left: auto;
+        margin-right: 10px;
     }
 }
 

@@ -162,5 +162,12 @@
             margin-top: 10px;
             min-width: 35px;
         }
+
+        &__empty {
+            img {
+                width: 160px;
+                margin-left: 20px;
+            }
+        }
     }
 }

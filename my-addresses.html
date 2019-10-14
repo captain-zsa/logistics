@@ -22,18 +22,30 @@
             <span class="text  text--uppercase  text--bold  user-box__name">Алексей Хайрутдинов</span>
         </p>
         <div class="user-box__balance">
-            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--left">
+            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--left">
                 Пополнить
                 <svg class="arrow  arrow--right">
                     <use xlink:href="#arrow"></use>
                 </svg>
             </a>
-            <select name="price" class="select-valuted user-box__select">
-                <option value="4187" selected>RUB</option>
-                <option value="418.7">CNY</option>
-                <option value="65">USD</option>
-            </select>
-            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--right">
+            <div class="select select-valuted user-box__select">
+                <div class="select__param">
+                    <strong>4187</strong><small>.63</small> <span class="helper" data-help="Рубли">₽</span>
+                </div>
+                <!-- Если нужно показать селект - показываем select__list display: block; ну или как-то чтоб поменять это свойство-->
+                <div class="select__list">
+                    <div class="select__item" data-value="4187.63 RUB">
+                        <strong>4187</strong><small>.63</small> <span class="helper" data-help="Рубли">₽</span>
+                    </div>
+                    <div class="select__item" data-value="418.7 CNY">
+                        <strong>418.7</strong><small>.63</small> <span class="helper" data-help="Юани">¥</span>
+                    </div>
+                    <div class="select__item" data-value="65 USD">
+                        <strong>65</strong><small>.63</small> <span class="helper" data-help="Доллары">$</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--right">
                 Вывести
                 <svg class="arrow  arrow--right">
                     <use xlink:href="#arrow"></use>
@@ -49,16 +61,16 @@
                     <a href="#" class="text  text--uppercase  part__link">мои заказы на выкуп</a>
                 </li>
                 <li class="part__item">
-                    <a href="#" class="text  text--uppercase  part__link">мои отправки из китая</a>
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои отправки из китая</a>
                 </li>
                 <li class="part__item">
-                    <a href="#" class="text  text--uppercase  part__link">мои запросы на поиск</a>
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои запросы на поиск</a>
                 </li>
                 <li class="part__item">
                     <a href="#" class="text  text--uppercase  part__link">мои финансы</a>
                 </li>
                 <li class="part__item">
-                    <a href="#" class="text  text--uppercase  part__link">мои сообщения</a>
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои сообщения</a>
                 </li>
             </ul>
 
@@ -73,7 +85,7 @@
                     <a href="#" class="text  text--uppercase  part__link  part__link--active  text--bold">мои адреса</a>
                 </li>
                 <li class="part__item">
-                    <a href="#" class="text  text--uppercase  part__link">мои социальные сети</a>
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои социальные сети</a>
                 </li>
                 <li class="part__item  part__item--partner">
                     <a href="#" class="text  text--uppercase  part__link">моя реферальная программа</a>
@@ -94,6 +106,20 @@
                         <use xlink:href="#arrow"></use>
                     </svg>
                 </a>
+            </div>
+
+            <div class="my-addresses my-addresses--data">
+                <a href="#" class="cross cross--box  my-addresses__close"><svg><use xlink:href="#cross"></use></svg></a>
+                <a href="#" class="marker  marker--box  my-addresses__marker"><svg><use xlink:href="#marker"></use></svg></a>
+                <p class="text  my-addresses__text">Бессонова Юлия Викторовна</p>
+                <p class="text  my-addresses__text">Восточная, 22/3, 319</p>
+                <p class="text  my-addresses__text">Краснодарский край, Краснодар</p>
+                <p class="text  my-addresses__text">350910</p>
+                <p class="text  my-addresses__text">Россия</p>
+                <p class="text  my-addresses__text">892821965453</p>
+                <div class="important  important--content  my-addresses__important">
+                    <p class="text  text--little">Это ваш адрес доставки по умолчанию</p>
+                </div>
             </div>
 
             <div class="my-addresses  my-addresses--padding-bottom_none">
@@ -195,7 +221,7 @@
                     <label class="label  l-margin-bottom_big">
                         <span class="text">Паспортные данные:</span>
                         <input type="text" class="input  input--max" placeholder="Введите паспортные данные">
-                        <a title="Некоторые транспортные компании запрашивают паспортные данные получателя груза. Пожалуйста, укажите их заранее" class="label__help"><svg><use xlink:href="#icon-information"></use></svg></a>
+                        <a data-help="Некоторые транспортные компании запрашивают паспортные данные получателя груза. Пожалуйста, укажите их заранее. Введите через запятую: серия и номер, дата выдачи, кем выдан." class="helper  helper--big label__help"><svg><use xlink:href="#icon-information"></use></svg></a>
                     </label>
                     <h4 class="text text--bold  l-margin-bottom_normal">Укажите адрес доставки груза</h4>
                     <div class="l-flex l-flex--jc_sb l-margin-bottom_normal  l-flex--wrap_mobile">
@@ -266,6 +292,13 @@
     <div class="popup  popup--wechatpay">
         <a class="cross  popup__close"><svg><use xlink:href="#cross"></use></svg></a>
         <img src="img/wechatpayalexey.png">
+    </div>
+
+    <div class="popup  popup--delit">
+        <a class="cross  popup__close"><svg><use xlink:href="#cross"></use></svg></a>
+        <h3 class="text text--uppercase  popup__title">Вы действительно хотите удалить свой адрес?</h3>
+        <a href="#" class="btn btn--border btn--border_disabled  popup__btn">Удалить</a>
+        <a href="#" class="btn btn--border  popup__btn">Отмена</a>
     </div>
 
     <script src="js/jquery-1.11.3.min.js"></script>

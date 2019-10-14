@@ -20,16 +20,13 @@
     }
 
     &__link {
-        background-color: $u-yellow;
+        background-color: $u-pink;
         padding: 30px;
     }
 
     &__box {
         @include flex;
         justify-content: flex-start;
-        padding-bottom: 25px;
-        margin-bottom: 23px;
-        border-bottom: 1px solid $silver-large;
     }
 
     &__input {
@@ -53,8 +50,8 @@
         cursor: pointer;
 
         svg {
-            width: 14px;
-            height: 18px;
+            width: 16px;
+            height: 20px;
             transform: translate(0, 3px);
         }
     }

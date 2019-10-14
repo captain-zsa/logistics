@@ -55,6 +55,14 @@
 
     &--error {
         color: $font-color-red;
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 
     &--green {

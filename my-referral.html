@@ -22,18 +22,30 @@
             <span class="text  text--uppercase  text--bold  user-box__name">Алексей Хайрутдинов</span>
         </p>
         <div class="user-box__balance">
-            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--left">
+            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--left">
                 Пополнить
                 <svg class="arrow  arrow--right">
                     <use xlink:href="#arrow"></use>
                 </svg>
             </a>
-            <select name="price" class="select-valuted user-box__select">
-                <option value="4187" selected>RUB</option>
-                <option value="418.7">CNY</option>
-                <option value="65">USD</option>
-            </select>
-            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--right">
+            <div class="select select-valuted user-box__select">
+                <div class="select__param">
+                    <strong>4187</strong><small>.63</small> <span class="helper" data-help="Рубли">₽</span>
+                </div>
+                <!-- Если нужно показать селект - показываем select__list display: block; ну или как-то чтоб поменять это свойство-->
+                <div class="select__list">
+                    <div class="select__item" data-value="4187.63 RUB">
+                        <strong>4187</strong><small>.63</small> <span class="helper" data-help="Рубли">₽</span>
+                    </div>
+                    <div class="select__item" data-value="418.7 CNY">
+                        <strong>418.7</strong><small>.63</small> <span class="helper" data-help="Юани">¥</span>
+                    </div>
+                    <div class="select__item" data-value="65 USD">
+                        <strong>65</strong><small>.63</small> <span class="helper" data-help="Доллары">$</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--right">
                 Вывести
                 <svg class="arrow  arrow--right">
                     <use xlink:href="#arrow"></use>
@@ -49,16 +61,16 @@
                     <a href="#" class="text  text--uppercase  part__link">мои заказы на выкуп</a>
                 </li>
                 <li class="part__item">
-                    <a href="#" class="text  text--uppercase  part__link">мои отправки из китая</a>
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои отправки из китая</a>
                 </li>
                 <li class="part__item">
-                    <a href="#" class="text  text--uppercase  part__link">мои запросы на поиск</a>
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои запросы на поиск</a>
                 </li>
                 <li class="part__item">
                     <a href="#" class="text  text--uppercase  part__link">мои финансы</a>
                 </li>
                 <li class="part__item">
-                    <a href="#" class="text  text--uppercase  part__link">мои сообщения</a>
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои сообщения</a>
                 </li>
             </ul>
 
@@ -73,7 +85,7 @@
                     <a href="#" class="text  text--uppercase  part__link">мои адреса</a>
                 </li>
                 <li class="part__item">
-                    <a href="#" class="text  text--uppercase  part__link">мои социальные сети</a>
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои социальные сети</a>
                 </li>
                 <li class="part__item  part__item--partner">
                     <a href="#" class="text  text--uppercase  part__link  part__link--active  text--bold">моя реферальная программа</a>
@@ -97,11 +109,10 @@
                 </div>
                 <div class="referral-desc__link">
                     <div class="referral-desc__box">
-                        <p class="text  referral-desc__label">А вот и Ваша реферальная<br>ссылка, приносящая деньги ; )</p>
+                        <p class="text  text--bold  referral-desc__label">А вот и Ваша реферальная<br>ссылка, приносящая деньги ; )</p>
                         <input type="text" class="referral-desc__input" value="http://zzlogistics.ru/?=ref0000001" readonly>
                         <button class="referral-desc__copy"><svg><use xlink:href="#copy"></use></svg></button>
                     </div>
-                    <p class="text text--big text--bold  text--align_center">Вы уже решили, на что потратите эти деньги?</p>
                 </div>
             </div>
 

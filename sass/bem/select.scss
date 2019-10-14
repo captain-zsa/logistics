@@ -2,7 +2,7 @@
     appearance: none;
     border-radius: 3px;
     border: 1px solid $silver-big;
-    padding: 12px 20px;
+    padding: 8px 20px;
     position: relative;
     box-sizing: border-box;
     padding-right: 35px;
@@ -25,16 +25,18 @@
     }
 
     strong {
+        font-size: 22px;
         font-weight: 700;
     }
 
     span {
-        font-size: 17px;
-        line-height: 17px;
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    small {
+        font-size: 14px;
         font-weight: 400;
-        display: inline-block;
-        vertical-align: middle;
-        transform: translate(0, 2px);
     }
 
     b {
