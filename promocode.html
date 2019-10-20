@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ZZ-logistics Промокод</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Это спрайт c svg иконками -->
+    <div class="none"><include src="build/img/sprite.svg"></include></div>
+
+    <header class="main  top">
+        <img src="img/logo.svg" alt="Topzakazz logistics logo" class="top__logo">
+        <a href="#" class="text  text--uppercase  text--regular  text--main  top__exit">Выход</a>
+    </header>
+
+    <section class="main  user-box">
+        <p class="user-box__text">
+            <small class="text  text--little  text--regular">Здравствуйте,</small>
+            <span class="text  text--uppercase  text--bold  user-box__name">Алексей Хайрутдинов</span>
+        </p>
+        <div class="user-box__balance">
+            <a href="#" class="btn  btn--border  btn--arrow  user-box__btn  user-box__btn--left">
+                Пополнить
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+            <div class="select select-valuted user-box__select">
+                <div class="select__param">
+                    <strong>4187</strong><small>.63</small> <span class="helper" data-help="Рубли">₽</span>
+                </div>
+                <!-- Если нужно показать селект - показываем select__list display: block; ну или как-то чтоб поменять это свойство-->
+                <div class="select__list">
+                    <div class="select__item" data-value="4187.63 RUB">
+                        <strong>4187</strong><small>.63</small> <span class="helper" data-help="Рубли">₽</span>
+                    </div>
+                    <div class="select__item" data-value="418.7 CNY">
+                        <strong>418.7</strong><small>.63</small> <span class="helper" data-help="Юани">¥</span>
+                    </div>
+                    <div class="select__item" data-value="65 USD">
+                        <strong>65</strong><small>.63</small> <span class="helper" data-help="Доллары">$</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn  btn--border  btn--border_silver  btn--arrow  user-box__btn  user-box__btn--right">
+                Вывести
+                <svg class="arrow  arrow--right">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <main class="main container">
+        <div class="container__part">
+            <ul class="part">
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои заказы на выкуп</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои отправки из китая</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои запросы на поиск</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои финансы</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои сообщения</a>
+                </li>
+            </ul>
+
+            <ul class="part  container__user-sidebar">
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">моя информация</a>
+                </li>
+                <li class="part__item">
+                    <a href="change-password.html" class="text  text--uppercase  part__link">изменить пароль</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link">мои адреса</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link  part__link--disabled">мои социальные сети</a>
+                </li>
+                <li class="part__item  part__item--partner">
+                    <a href="#" class="text  text--uppercase  part__link  text--bold">моя реферальная программа</a>
+                </li>
+                <li class="part__item">
+                    <a href="#" class="text  text--uppercase  part__link  part__link--active  text--bold">Промокод</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container__center">
+            <div class="intro  container__intro">
+                <h3 class="text  text--uppercase  text--bold  text--big  intro__title">
+                    <img src="img/promocode.png" class="intro__promocode">
+                    <span>промокоды</span>
+                </h3>
+                <div class="intro__flex">
+                    <p class="text intro__desc">Если у Вас есть промокод, активируйте его здесь:</p>
+                    <input type="text" class="input intro__input" placeholder="Введите промокод">
+                    <a href="#" class="btn  btn--arrow  btn--inline">
+                        Сохранить
+                        <svg class="arrow  arrow--right">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="promocode">
+                <table class="promocode__table">
+                    <tr>
+                        <td>Наименование промокода:</td>
+                        <td>СТАРТ</td>
+                    </tr>
+                    <tr>
+                        <td>Действие:</td>
+                        <td>1 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Статус:</td>
+                        <td>Активирован</td>
+                    </tr>
+                    <tr>
+                        <td>Условия использования:</td>
+                        <td>Совершите заказ на “Выкуп товаров с китайских сайтов” на сумму от 2 000 руб.</td>
+                    </tr>
+                </table>
+                <table class="promocode__table">
+                    <tr>
+                        <td>Наименование промокода:</td>
+                        <td>КОНКУРС</td>
+                    </tr>
+                    <tr>
+                        <td>Действие:</td>
+                        <td>1 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Статус:</td>
+                        <td>Активирован</td>
+                    </tr>
+                    <tr>
+                        <td>Условия использования:</td>
+                        <td>Совершите заказ на “Выкуп товаров с китайских сайтов” на сумму от 2 000 руб.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container__additionally"></div>
+    </main>
+
+    <div class="popup  popup--wechatpay">
+        <a class="cross  popup__close"><svg><use xlink:href="#cross"></use></svg></a>
+        <img src="img/wechatpayalexey.png">
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

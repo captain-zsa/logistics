@@ -1,0 +1,78 @@
+.promocode {
+    padding: 30px;
+    background-color: $u-white;
+
+    &__table {
+        border-collapse: collapse;
+        border-bottom: 1px solid $silver-big;
+        margin-bottom: 20px;
+        width: 100%;
+
+        tr:first-child td:last-child,
+        tr:nth-child(2) td:last-child {
+            font-weight: 400;
+        }
+
+        tr:last-child td {
+            padding-bottom: 20px;
+        }
+
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+
+            tr:last-child td {
+                padding-bottom: 0;
+            }
+        }
+
+        td {
+            vertical-align: top;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            &:first-child {
+                width: 190px;
+                padding-right: 8px;
+            }
+        }
+    }
+}
+
+
+/*Мобильные*/
+@media (max-width: $tablet-width - 2) {
+    .promocode {
+        padding: 15px;
+
+        &__table {
+            display: block;
+
+            tr {
+                display: flex;
+
+                &:last-child {
+                    display: block;
+                    td {
+                        width: 100%;
+                        text-align: center;
+                        display: block;
+
+                        &:first-child {
+                            font-weight: 400;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+
+            td {
+                flex-grow: 1;
+
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
