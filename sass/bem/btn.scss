@@ -79,6 +79,10 @@
         &_disabled {
             color: $font-color-silver;
             border-color: $silver-big;
+
+            svg {
+                fill: $font-color-silver;
+            }
         }
     }
 

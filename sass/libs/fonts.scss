@@ -2,8 +2,7 @@
 	font-family: "Calibri";
 	src: local("Calibri"),
 		 url(../fonts/calibri.woff2) format('woff2'),
-		 url(../fonts/calibri.woff) format('woff'),
-		 url(../fonts/calibri.ttf)  format('truetype');
+		 url(../fonts/calibri.woff) format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -11,17 +10,15 @@
 	font-family: "Calibri";
 	src: local("Calibri Lite"),
 		 url(../fonts/calibril.woff2) format('woff2'),
-		 url(../fonts/calibril.woff) format('woff'),
-		 url(../fonts/calibril.ttf)  format('truetype');
+		 url(../fonts/calibril.woff) format('woff');
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Calibri";
-	src: local("Calibri Bold"), 
+	src: local("Calibri Bold"),
 		 url(../fonts/calibrib.woff2) format('woff2'),
-		 url(../fonts/calibrib.woff) format('woff'),
-		 url(../fonts/calibrib.ttf)  format('truetype');
+		 url(../fonts/calibrib.woff) format('woff');
 	font-weight: 700;
 	font-style: normal;
 }

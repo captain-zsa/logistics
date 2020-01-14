@@ -33,6 +33,18 @@
         }
     }
 
+    &--payout {
+        &:after {
+            text-align: left;
+            text-transform: none;
+            font-weight: 300;
+            width: 200px;
+            top: 100%;
+            right: 0;
+            left: auto;
+        }
+    }
+
     &--right {
         &:after {
             left: auto;
